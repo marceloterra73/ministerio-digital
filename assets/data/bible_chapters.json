@@ -1,0 +1,5947 @@
+[
+  {
+    "book": "Gênesis",
+    "chapter": 1,
+    "verses": 31
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 2,
+    "verses": 25
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 3,
+    "verses": 24
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 4,
+    "verses": 26
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 5,
+    "verses": 32
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 6,
+    "verses": 22
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 7,
+    "verses": 24
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 8,
+    "verses": 22
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 9,
+    "verses": 29
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 10,
+    "verses": 32
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 11,
+    "verses": 32
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 12,
+    "verses": 20
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 13,
+    "verses": 18
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 14,
+    "verses": 24
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 15,
+    "verses": 21
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 16,
+    "verses": 16
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 17,
+    "verses": 27
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 18,
+    "verses": 33
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 19,
+    "verses": 38
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 20,
+    "verses": 18
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 21,
+    "verses": 34
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 22,
+    "verses": 24
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 23,
+    "verses": 20
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 24,
+    "verses": 67
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 25,
+    "verses": 34
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 26,
+    "verses": 35
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 27,
+    "verses": 46
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 28,
+    "verses": 22
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 29,
+    "verses": 35
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 30,
+    "verses": 43
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 31,
+    "verses": 55
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 32,
+    "verses": 32
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 33,
+    "verses": 20
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 34,
+    "verses": 31
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 35,
+    "verses": 29
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 36,
+    "verses": 43
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 37,
+    "verses": 36
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 38,
+    "verses": 30
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 39,
+    "verses": 23
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 40,
+    "verses": 23
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 41,
+    "verses": 57
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 42,
+    "verses": 38
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 43,
+    "verses": 34
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 44,
+    "verses": 34
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 45,
+    "verses": 28
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 46,
+    "verses": 34
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 47,
+    "verses": 31
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 48,
+    "verses": 22
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 49,
+    "verses": 33
+  },
+  {
+    "book": "Gênesis",
+    "chapter": 50,
+    "verses": 26
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 1,
+    "verses": 22
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 2,
+    "verses": 25
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 3,
+    "verses": 22
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 4,
+    "verses": 31
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 5,
+    "verses": 23
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 6,
+    "verses": 30
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 7,
+    "verses": 25
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 8,
+    "verses": 32
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 9,
+    "verses": 35
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 10,
+    "verses": 29
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 11,
+    "verses": 10
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 12,
+    "verses": 51
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 13,
+    "verses": 22
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 14,
+    "verses": 31
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 15,
+    "verses": 27
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 16,
+    "verses": 36
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 17,
+    "verses": 16
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 18,
+    "verses": 27
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 19,
+    "verses": 25
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 20,
+    "verses": 26
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 21,
+    "verses": 36
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 22,
+    "verses": 31
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 23,
+    "verses": 33
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 24,
+    "verses": 18
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 25,
+    "verses": 40
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 26,
+    "verses": 37
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 27,
+    "verses": 21
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 28,
+    "verses": 43
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 29,
+    "verses": 46
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 30,
+    "verses": 38
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 31,
+    "verses": 18
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 32,
+    "verses": 35
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 33,
+    "verses": 23
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 34,
+    "verses": 35
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 35,
+    "verses": 35
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 36,
+    "verses": 38
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 37,
+    "verses": 29
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 38,
+    "verses": 31
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 39,
+    "verses": 43
+  },
+  {
+    "book": "Êxodo",
+    "chapter": 40,
+    "verses": 38
+  },
+  {
+    "book": "Levítico",
+    "chapter": 1,
+    "verses": 17
+  },
+  {
+    "book": "Levítico",
+    "chapter": 2,
+    "verses": 16
+  },
+  {
+    "book": "Levítico",
+    "chapter": 3,
+    "verses": 17
+  },
+  {
+    "book": "Levítico",
+    "chapter": 4,
+    "verses": 35
+  },
+  {
+    "book": "Levítico",
+    "chapter": 5,
+    "verses": 19
+  },
+  {
+    "book": "Levítico",
+    "chapter": 6,
+    "verses": 30
+  },
+  {
+    "book": "Levítico",
+    "chapter": 7,
+    "verses": 38
+  },
+  {
+    "book": "Levítico",
+    "chapter": 8,
+    "verses": 36
+  },
+  {
+    "book": "Levítico",
+    "chapter": 9,
+    "verses": 24
+  },
+  {
+    "book": "Levítico",
+    "chapter": 10,
+    "verses": 20
+  },
+  {
+    "book": "Levítico",
+    "chapter": 11,
+    "verses": 47
+  },
+  {
+    "book": "Levítico",
+    "chapter": 12,
+    "verses": 8
+  },
+  {
+    "book": "Levítico",
+    "chapter": 13,
+    "verses": 59
+  },
+  {
+    "book": "Levítico",
+    "chapter": 14,
+    "verses": 57
+  },
+  {
+    "book": "Levítico",
+    "chapter": 15,
+    "verses": 33
+  },
+  {
+    "book": "Levítico",
+    "chapter": 16,
+    "verses": 34
+  },
+  {
+    "book": "Levítico",
+    "chapter": 17,
+    "verses": 16
+  },
+  {
+    "book": "Levítico",
+    "chapter": 18,
+    "verses": 30
+  },
+  {
+    "book": "Levítico",
+    "chapter": 19,
+    "verses": 37
+  },
+  {
+    "book": "Levítico",
+    "chapter": 20,
+    "verses": 27
+  },
+  {
+    "book": "Levítico",
+    "chapter": 21,
+    "verses": 24
+  },
+  {
+    "book": "Levítico",
+    "chapter": 22,
+    "verses": 33
+  },
+  {
+    "book": "Levítico",
+    "chapter": 23,
+    "verses": 44
+  },
+  {
+    "book": "Levítico",
+    "chapter": 24,
+    "verses": 23
+  },
+  {
+    "book": "Levítico",
+    "chapter": 25,
+    "verses": 55
+  },
+  {
+    "book": "Levítico",
+    "chapter": 26,
+    "verses": 46
+  },
+  {
+    "book": "Levítico",
+    "chapter": 27,
+    "verses": 34
+  },
+  {
+    "book": "Números",
+    "chapter": 1,
+    "verses": 54
+  },
+  {
+    "book": "Números",
+    "chapter": 2,
+    "verses": 34
+  },
+  {
+    "book": "Números",
+    "chapter": 3,
+    "verses": 51
+  },
+  {
+    "book": "Números",
+    "chapter": 4,
+    "verses": 49
+  },
+  {
+    "book": "Números",
+    "chapter": 5,
+    "verses": 31
+  },
+  {
+    "book": "Números",
+    "chapter": 6,
+    "verses": 27
+  },
+  {
+    "book": "Números",
+    "chapter": 7,
+    "verses": 89
+  },
+  {
+    "book": "Números",
+    "chapter": 8,
+    "verses": 26
+  },
+  {
+    "book": "Números",
+    "chapter": 9,
+    "verses": 23
+  },
+  {
+    "book": "Números",
+    "chapter": 10,
+    "verses": 36
+  },
+  {
+    "book": "Números",
+    "chapter": 11,
+    "verses": 35
+  },
+  {
+    "book": "Números",
+    "chapter": 12,
+    "verses": 16
+  },
+  {
+    "book": "Números",
+    "chapter": 13,
+    "verses": 33
+  },
+  {
+    "book": "Números",
+    "chapter": 14,
+    "verses": 45
+  },
+  {
+    "book": "Números",
+    "chapter": 15,
+    "verses": 41
+  },
+  {
+    "book": "Números",
+    "chapter": 16,
+    "verses": 50
+  },
+  {
+    "book": "Números",
+    "chapter": 17,
+    "verses": 13
+  },
+  {
+    "book": "Números",
+    "chapter": 18,
+    "verses": 32
+  },
+  {
+    "book": "Números",
+    "chapter": 19,
+    "verses": 22
+  },
+  {
+    "book": "Números",
+    "chapter": 20,
+    "verses": 29
+  },
+  {
+    "book": "Números",
+    "chapter": 21,
+    "verses": 35
+  },
+  {
+    "book": "Números",
+    "chapter": 22,
+    "verses": 41
+  },
+  {
+    "book": "Números",
+    "chapter": 23,
+    "verses": 30
+  },
+  {
+    "book": "Números",
+    "chapter": 24,
+    "verses": 25
+  },
+  {
+    "book": "Números",
+    "chapter": 25,
+    "verses": 18
+  },
+  {
+    "book": "Números",
+    "chapter": 26,
+    "verses": 65
+  },
+  {
+    "book": "Números",
+    "chapter": 27,
+    "verses": 23
+  },
+  {
+    "book": "Números",
+    "chapter": 28,
+    "verses": 31
+  },
+  {
+    "book": "Números",
+    "chapter": 29,
+    "verses": 40
+  },
+  {
+    "book": "Números",
+    "chapter": 30,
+    "verses": 16
+  },
+  {
+    "book": "Números",
+    "chapter": 31,
+    "verses": 54
+  },
+  {
+    "book": "Números",
+    "chapter": 32,
+    "verses": 42
+  },
+  {
+    "book": "Números",
+    "chapter": 33,
+    "verses": 56
+  },
+  {
+    "book": "Números",
+    "chapter": 34,
+    "verses": 29
+  },
+  {
+    "book": "Números",
+    "chapter": 35,
+    "verses": 34
+  },
+  {
+    "book": "Números",
+    "chapter": 36,
+    "verses": 13
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 1,
+    "verses": 46
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 2,
+    "verses": 37
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 3,
+    "verses": 29
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 4,
+    "verses": 49
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 5,
+    "verses": 33
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 6,
+    "verses": 25
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 7,
+    "verses": 26
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 8,
+    "verses": 20
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 9,
+    "verses": 29
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 10,
+    "verses": 22
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 11,
+    "verses": 32
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 12,
+    "verses": 32
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 13,
+    "verses": 18
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 14,
+    "verses": 29
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 15,
+    "verses": 23
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 16,
+    "verses": 22
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 17,
+    "verses": 20
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 18,
+    "verses": 22
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 19,
+    "verses": 21
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 20,
+    "verses": 20
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 21,
+    "verses": 23
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 22,
+    "verses": 30
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 23,
+    "verses": 25
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 24,
+    "verses": 22
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 25,
+    "verses": 19
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 26,
+    "verses": 19
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 27,
+    "verses": 26
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 28,
+    "verses": 68
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 29,
+    "verses": 29
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 30,
+    "verses": 20
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 31,
+    "verses": 30
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 32,
+    "verses": 52
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 33,
+    "verses": 29
+  },
+  {
+    "book": "Deuteronômio",
+    "chapter": 34,
+    "verses": 12
+  },
+  {
+    "book": "Josué",
+    "chapter": 1,
+    "verses": 18
+  },
+  {
+    "book": "Josué",
+    "chapter": 2,
+    "verses": 24
+  },
+  {
+    "book": "Josué",
+    "chapter": 3,
+    "verses": 17
+  },
+  {
+    "book": "Josué",
+    "chapter": 4,
+    "verses": 24
+  },
+  {
+    "book": "Josué",
+    "chapter": 5,
+    "verses": 15
+  },
+  {
+    "book": "Josué",
+    "chapter": 6,
+    "verses": 27
+  },
+  {
+    "book": "Josué",
+    "chapter": 7,
+    "verses": 26
+  },
+  {
+    "book": "Josué",
+    "chapter": 8,
+    "verses": 35
+  },
+  {
+    "book": "Josué",
+    "chapter": 9,
+    "verses": 27
+  },
+  {
+    "book": "Josué",
+    "chapter": 10,
+    "verses": 43
+  },
+  {
+    "book": "Josué",
+    "chapter": 11,
+    "verses": 23
+  },
+  {
+    "book": "Josué",
+    "chapter": 12,
+    "verses": 24
+  },
+  {
+    "book": "Josué",
+    "chapter": 13,
+    "verses": 33
+  },
+  {
+    "book": "Josué",
+    "chapter": 14,
+    "verses": 15
+  },
+  {
+    "book": "Josué",
+    "chapter": 15,
+    "verses": 63
+  },
+  {
+    "book": "Josué",
+    "chapter": 16,
+    "verses": 10
+  },
+  {
+    "book": "Josué",
+    "chapter": 17,
+    "verses": 18
+  },
+  {
+    "book": "Josué",
+    "chapter": 18,
+    "verses": 28
+  },
+  {
+    "book": "Josué",
+    "chapter": 19,
+    "verses": 51
+  },
+  {
+    "book": "Josué",
+    "chapter": 20,
+    "verses": 9
+  },
+  {
+    "book": "Josué",
+    "chapter": 21,
+    "verses": 45
+  },
+  {
+    "book": "Josué",
+    "chapter": 22,
+    "verses": 34
+  },
+  {
+    "book": "Josué",
+    "chapter": 23,
+    "verses": 16
+  },
+  {
+    "book": "Josué",
+    "chapter": 24,
+    "verses": 33
+  },
+  {
+    "book": "Juízes",
+    "chapter": 1,
+    "verses": 36
+  },
+  {
+    "book": "Juízes",
+    "chapter": 2,
+    "verses": 23
+  },
+  {
+    "book": "Juízes",
+    "chapter": 3,
+    "verses": 31
+  },
+  {
+    "book": "Juízes",
+    "chapter": 4,
+    "verses": 24
+  },
+  {
+    "book": "Juízes",
+    "chapter": 5,
+    "verses": 31
+  },
+  {
+    "book": "Juízes",
+    "chapter": 6,
+    "verses": 40
+  },
+  {
+    "book": "Juízes",
+    "chapter": 7,
+    "verses": 25
+  },
+  {
+    "book": "Juízes",
+    "chapter": 8,
+    "verses": 35
+  },
+  {
+    "book": "Juízes",
+    "chapter": 9,
+    "verses": 57
+  },
+  {
+    "book": "Juízes",
+    "chapter": 10,
+    "verses": 18
+  },
+  {
+    "book": "Juízes",
+    "chapter": 11,
+    "verses": 40
+  },
+  {
+    "book": "Juízes",
+    "chapter": 12,
+    "verses": 15
+  },
+  {
+    "book": "Juízes",
+    "chapter": 13,
+    "verses": 25
+  },
+  {
+    "book": "Juízes",
+    "chapter": 14,
+    "verses": 20
+  },
+  {
+    "book": "Juízes",
+    "chapter": 15,
+    "verses": 20
+  },
+  {
+    "book": "Juízes",
+    "chapter": 16,
+    "verses": 31
+  },
+  {
+    "book": "Juízes",
+    "chapter": 17,
+    "verses": 13
+  },
+  {
+    "book": "Juízes",
+    "chapter": 18,
+    "verses": 31
+  },
+  {
+    "book": "Juízes",
+    "chapter": 19,
+    "verses": 30
+  },
+  {
+    "book": "Juízes",
+    "chapter": 20,
+    "verses": 48
+  },
+  {
+    "book": "Juízes",
+    "chapter": 21,
+    "verses": 25
+  },
+  {
+    "book": "Rute",
+    "chapter": 1,
+    "verses": 22
+  },
+  {
+    "book": "Rute",
+    "chapter": 2,
+    "verses": 23
+  },
+  {
+    "book": "Rute",
+    "chapter": 3,
+    "verses": 18
+  },
+  {
+    "book": "Rute",
+    "chapter": 4,
+    "verses": 22
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "verses": 28
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "verses": 36
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "verses": 21
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "verses": 22
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "verses": 12
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 6,
+    "verses": 21
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "verses": 17
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "verses": 22
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "verses": 27
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "verses": 27
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "verses": 15
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "verses": 25
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "verses": 23
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "verses": 52
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "verses": 35
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "verses": 23
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "verses": 58
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "verses": 30
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "verses": 24
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "verses": 42
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "verses": 15
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "verses": 23
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "verses": 29
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "verses": 22
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "verses": 44
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "verses": 25
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "verses": 12
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "verses": 25
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "verses": 11
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "verses": 31
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "verses": 13
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "verses": 27
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "verses": 32
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "verses": 39
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "verses": 12
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "verses": 25
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "verses": 23
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "verses": 29
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 8,
+    "verses": 18
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "verses": 13
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "verses": 19
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "verses": 27
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "verses": 31
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "verses": 39
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "verses": 33
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "verses": 37
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "verses": 23
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "verses": 29
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "verses": 33
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "verses": 43
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "verses": 26
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "verses": 22
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "verses": 51
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "verses": 39
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "verses": 25
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 1,
+    "verses": 53
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 2,
+    "verses": 46
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 3,
+    "verses": 28
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 4,
+    "verses": 34
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 5,
+    "verses": 18
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 6,
+    "verses": 38
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 7,
+    "verses": 51
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 8,
+    "verses": 66
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 9,
+    "verses": 28
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 10,
+    "verses": 29
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 11,
+    "verses": 43
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 12,
+    "verses": 33
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 13,
+    "verses": 34
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 14,
+    "verses": 31
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 15,
+    "verses": 34
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 16,
+    "verses": 34
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 17,
+    "verses": 24
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 18,
+    "verses": 46
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 19,
+    "verses": 21
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 20,
+    "verses": 43
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 21,
+    "verses": 29
+  },
+  {
+    "book": "1 Reis",
+    "chapter": 22,
+    "verses": 53
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 1,
+    "verses": 18
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 2,
+    "verses": 25
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 3,
+    "verses": 27
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 4,
+    "verses": 44
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 5,
+    "verses": 27
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 6,
+    "verses": 33
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 7,
+    "verses": 20
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 8,
+    "verses": 29
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 9,
+    "verses": 37
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 10,
+    "verses": 36
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 11,
+    "verses": 21
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 12,
+    "verses": 21
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 13,
+    "verses": 25
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 14,
+    "verses": 29
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 15,
+    "verses": 38
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 16,
+    "verses": 20
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 17,
+    "verses": 41
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 18,
+    "verses": 37
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 19,
+    "verses": 37
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 20,
+    "verses": 21
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 21,
+    "verses": 26
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 22,
+    "verses": 20
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 23,
+    "verses": 37
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 24,
+    "verses": 20
+  },
+  {
+    "book": "2 Reis",
+    "chapter": 25,
+    "verses": 30
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 1,
+    "verses": 54
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 2,
+    "verses": 55
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 3,
+    "verses": 24
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 4,
+    "verses": 43
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 5,
+    "verses": 26
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 6,
+    "verses": 81
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 7,
+    "verses": 40
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 8,
+    "verses": 40
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 9,
+    "verses": 44
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 10,
+    "verses": 14
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 11,
+    "verses": 47
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 12,
+    "verses": 40
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 13,
+    "verses": 14
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 14,
+    "verses": 17
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 15,
+    "verses": 29
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 16,
+    "verses": 43
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 17,
+    "verses": 27
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 18,
+    "verses": 17
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 19,
+    "verses": 19
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 20,
+    "verses": 8
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 21,
+    "verses": 30
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 22,
+    "verses": 19
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 23,
+    "verses": 32
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 24,
+    "verses": 31
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 25,
+    "verses": 31
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 26,
+    "verses": 32
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 27,
+    "verses": 34
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 28,
+    "verses": 21
+  },
+  {
+    "book": "1 Crônicas",
+    "chapter": 29,
+    "verses": 30
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 1,
+    "verses": 17
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 2,
+    "verses": 18
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 3,
+    "verses": 17
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 4,
+    "verses": 22
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 5,
+    "verses": 14
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 6,
+    "verses": 42
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 7,
+    "verses": 22
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 8,
+    "verses": 18
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 9,
+    "verses": 31
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 10,
+    "verses": 19
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 11,
+    "verses": 23
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 12,
+    "verses": 16
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 13,
+    "verses": 22
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 14,
+    "verses": 15
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 15,
+    "verses": 19
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 16,
+    "verses": 14
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 17,
+    "verses": 19
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 18,
+    "verses": 34
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 19,
+    "verses": 11
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 20,
+    "verses": 37
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 21,
+    "verses": 20
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 22,
+    "verses": 12
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 23,
+    "verses": 21
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 24,
+    "verses": 27
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 25,
+    "verses": 28
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 26,
+    "verses": 23
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 27,
+    "verses": 9
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 28,
+    "verses": 27
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 29,
+    "verses": 36
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 30,
+    "verses": 27
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 31,
+    "verses": 21
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 32,
+    "verses": 33
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 33,
+    "verses": 25
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 34,
+    "verses": 33
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 35,
+    "verses": 27
+  },
+  {
+    "book": "2 Crônicas",
+    "chapter": 36,
+    "verses": 23
+  },
+  {
+    "book": "Esdras",
+    "chapter": 1,
+    "verses": 11
+  },
+  {
+    "book": "Esdras",
+    "chapter": 2,
+    "verses": 70
+  },
+  {
+    "book": "Esdras",
+    "chapter": 3,
+    "verses": 13
+  },
+  {
+    "book": "Esdras",
+    "chapter": 4,
+    "verses": 24
+  },
+  {
+    "book": "Esdras",
+    "chapter": 5,
+    "verses": 17
+  },
+  {
+    "book": "Esdras",
+    "chapter": 6,
+    "verses": 22
+  },
+  {
+    "book": "Esdras",
+    "chapter": 7,
+    "verses": 28
+  },
+  {
+    "book": "Esdras",
+    "chapter": 8,
+    "verses": 36
+  },
+  {
+    "book": "Esdras",
+    "chapter": 9,
+    "verses": 15
+  },
+  {
+    "book": "Esdras",
+    "chapter": 10,
+    "verses": 44
+  },
+  {
+    "book": "Neemias",
+    "chapter": 1,
+    "verses": 11
+  },
+  {
+    "book": "Neemias",
+    "chapter": 2,
+    "verses": 20
+  },
+  {
+    "book": "Neemias",
+    "chapter": 3,
+    "verses": 32
+  },
+  {
+    "book": "Neemias",
+    "chapter": 4,
+    "verses": 23
+  },
+  {
+    "book": "Neemias",
+    "chapter": 5,
+    "verses": 19
+  },
+  {
+    "book": "Neemias",
+    "chapter": 6,
+    "verses": 19
+  },
+  {
+    "book": "Neemias",
+    "chapter": 7,
+    "verses": 73
+  },
+  {
+    "book": "Neemias",
+    "chapter": 8,
+    "verses": 18
+  },
+  {
+    "book": "Neemias",
+    "chapter": 9,
+    "verses": 38
+  },
+  {
+    "book": "Neemias",
+    "chapter": 10,
+    "verses": 39
+  },
+  {
+    "book": "Neemias",
+    "chapter": 11,
+    "verses": 36
+  },
+  {
+    "book": "Neemias",
+    "chapter": 12,
+    "verses": 47
+  },
+  {
+    "book": "Neemias",
+    "chapter": 13,
+    "verses": 31
+  },
+  {
+    "book": "Ester",
+    "chapter": 1,
+    "verses": 22
+  },
+  {
+    "book": "Ester",
+    "chapter": 2,
+    "verses": 23
+  },
+  {
+    "book": "Ester",
+    "chapter": 3,
+    "verses": 15
+  },
+  {
+    "book": "Ester",
+    "chapter": 4,
+    "verses": 17
+  },
+  {
+    "book": "Ester",
+    "chapter": 5,
+    "verses": 14
+  },
+  {
+    "book": "Ester",
+    "chapter": 6,
+    "verses": 14
+  },
+  {
+    "book": "Ester",
+    "chapter": 7,
+    "verses": 10
+  },
+  {
+    "book": "Ester",
+    "chapter": 8,
+    "verses": 17
+  },
+  {
+    "book": "Ester",
+    "chapter": 9,
+    "verses": 32
+  },
+  {
+    "book": "Ester",
+    "chapter": 10,
+    "verses": 3
+  },
+  {
+    "book": "Jó",
+    "chapter": 1,
+    "verses": 22
+  },
+  {
+    "book": "Jó",
+    "chapter": 2,
+    "verses": 13
+  },
+  {
+    "book": "Jó",
+    "chapter": 3,
+    "verses": 26
+  },
+  {
+    "book": "Jó",
+    "chapter": 4,
+    "verses": 21
+  },
+  {
+    "book": "Jó",
+    "chapter": 5,
+    "verses": 27
+  },
+  {
+    "book": "Jó",
+    "chapter": 6,
+    "verses": 30
+  },
+  {
+    "book": "Jó",
+    "chapter": 7,
+    "verses": 21
+  },
+  {
+    "book": "Jó",
+    "chapter": 8,
+    "verses": 22
+  },
+  {
+    "book": "Jó",
+    "chapter": 9,
+    "verses": 35
+  },
+  {
+    "book": "Jó",
+    "chapter": 10,
+    "verses": 22
+  },
+  {
+    "book": "Jó",
+    "chapter": 11,
+    "verses": 20
+  },
+  {
+    "book": "Jó",
+    "chapter": 12,
+    "verses": 25
+  },
+  {
+    "book": "Jó",
+    "chapter": 13,
+    "verses": 28
+  },
+  {
+    "book": "Jó",
+    "chapter": 14,
+    "verses": 22
+  },
+  {
+    "book": "Jó",
+    "chapter": 15,
+    "verses": 35
+  },
+  {
+    "book": "Jó",
+    "chapter": 16,
+    "verses": 22
+  },
+  {
+    "book": "Jó",
+    "chapter": 17,
+    "verses": 16
+  },
+  {
+    "book": "Jó",
+    "chapter": 18,
+    "verses": 21
+  },
+  {
+    "book": "Jó",
+    "chapter": 19,
+    "verses": 29
+  },
+  {
+    "book": "Jó",
+    "chapter": 20,
+    "verses": 29
+  },
+  {
+    "book": "Jó",
+    "chapter": 21,
+    "verses": 34
+  },
+  {
+    "book": "Jó",
+    "chapter": 22,
+    "verses": 30
+  },
+  {
+    "book": "Jó",
+    "chapter": 23,
+    "verses": 17
+  },
+  {
+    "book": "Jó",
+    "chapter": 24,
+    "verses": 25
+  },
+  {
+    "book": "Jó",
+    "chapter": 25,
+    "verses": 6
+  },
+  {
+    "book": "Jó",
+    "chapter": 26,
+    "verses": 14
+  },
+  {
+    "book": "Jó",
+    "chapter": 27,
+    "verses": 23
+  },
+  {
+    "book": "Jó",
+    "chapter": 28,
+    "verses": 28
+  },
+  {
+    "book": "Jó",
+    "chapter": 29,
+    "verses": 25
+  },
+  {
+    "book": "Jó",
+    "chapter": 30,
+    "verses": 31
+  },
+  {
+    "book": "Jó",
+    "chapter": 31,
+    "verses": 40
+  },
+  {
+    "book": "Jó",
+    "chapter": 32,
+    "verses": 22
+  },
+  {
+    "book": "Jó",
+    "chapter": 33,
+    "verses": 33
+  },
+  {
+    "book": "Jó",
+    "chapter": 34,
+    "verses": 37
+  },
+  {
+    "book": "Jó",
+    "chapter": 35,
+    "verses": 16
+  },
+  {
+    "book": "Jó",
+    "chapter": 36,
+    "verses": 33
+  },
+  {
+    "book": "Jó",
+    "chapter": 37,
+    "verses": 24
+  },
+  {
+    "book": "Jó",
+    "chapter": 38,
+    "verses": 41
+  },
+  {
+    "book": "Jó",
+    "chapter": 39,
+    "verses": 30
+  },
+  {
+    "book": "Jó",
+    "chapter": 40,
+    "verses": 24
+  },
+  {
+    "book": "Jó",
+    "chapter": 41,
+    "verses": 34
+  },
+  {
+    "book": "Jó",
+    "chapter": 42,
+    "verses": 17
+  },
+  {
+    "book": "Psalm",
+    "chapter": 1,
+    "verses": 6
+  },
+  {
+    "book": "Psalm",
+    "chapter": 2,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 3,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 4,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 5,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 6,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 7,
+    "verses": 17
+  },
+  {
+    "book": "Psalm",
+    "chapter": 8,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 9,
+    "verses": 20
+  },
+  {
+    "book": "Psalm",
+    "chapter": 10,
+    "verses": 18
+  },
+  {
+    "book": "Psalm",
+    "chapter": 11,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 12,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 13,
+    "verses": 6
+  },
+  {
+    "book": "Psalm",
+    "chapter": 14,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 15,
+    "verses": 5
+  },
+  {
+    "book": "Psalm",
+    "chapter": 16,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 17,
+    "verses": 15
+  },
+  {
+    "book": "Psalm",
+    "chapter": 18,
+    "verses": 50
+  },
+  {
+    "book": "Psalm",
+    "chapter": 19,
+    "verses": 14
+  },
+  {
+    "book": "Psalm",
+    "chapter": 20,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 21,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 22,
+    "verses": 31
+  },
+  {
+    "book": "Psalm",
+    "chapter": 23,
+    "verses": 6
+  },
+  {
+    "book": "Psalm",
+    "chapter": 24,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 25,
+    "verses": 22
+  },
+  {
+    "book": "Psalm",
+    "chapter": 26,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 27,
+    "verses": 14
+  },
+  {
+    "book": "Psalm",
+    "chapter": 28,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 29,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 30,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 31,
+    "verses": 24
+  },
+  {
+    "book": "Psalm",
+    "chapter": 32,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 33,
+    "verses": 22
+  },
+  {
+    "book": "Psalm",
+    "chapter": 34,
+    "verses": 22
+  },
+  {
+    "book": "Psalm",
+    "chapter": 35,
+    "verses": 28
+  },
+  {
+    "book": "Psalm",
+    "chapter": 36,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 37,
+    "verses": 40
+  },
+  {
+    "book": "Psalm",
+    "chapter": 38,
+    "verses": 22
+  },
+  {
+    "book": "Psalm",
+    "chapter": 39,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 40,
+    "verses": 17
+  },
+  {
+    "book": "Psalm",
+    "chapter": 41,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 42,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 43,
+    "verses": 5
+  },
+  {
+    "book": "Psalm",
+    "chapter": 44,
+    "verses": 26
+  },
+  {
+    "book": "Psalm",
+    "chapter": 45,
+    "verses": 17
+  },
+  {
+    "book": "Psalm",
+    "chapter": 46,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 47,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 48,
+    "verses": 14
+  },
+  {
+    "book": "Psalm",
+    "chapter": 49,
+    "verses": 20
+  },
+  {
+    "book": "Psalm",
+    "chapter": 50,
+    "verses": 23
+  },
+  {
+    "book": "Psalm",
+    "chapter": 51,
+    "verses": 19
+  },
+  {
+    "book": "Psalm",
+    "chapter": 52,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 53,
+    "verses": 6
+  },
+  {
+    "book": "Psalm",
+    "chapter": 54,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 55,
+    "verses": 23
+  },
+  {
+    "book": "Psalm",
+    "chapter": 56,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 57,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 58,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 59,
+    "verses": 17
+  },
+  {
+    "book": "Psalm",
+    "chapter": 60,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 61,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 62,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 63,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 64,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 65,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 66,
+    "verses": 20
+  },
+  {
+    "book": "Psalm",
+    "chapter": 67,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 68,
+    "verses": 35
+  },
+  {
+    "book": "Psalm",
+    "chapter": 69,
+    "verses": 36
+  },
+  {
+    "book": "Psalm",
+    "chapter": 70,
+    "verses": 5
+  },
+  {
+    "book": "Psalm",
+    "chapter": 71,
+    "verses": 24
+  },
+  {
+    "book": "Psalm",
+    "chapter": 72,
+    "verses": 20
+  },
+  {
+    "book": "Psalm",
+    "chapter": 73,
+    "verses": 28
+  },
+  {
+    "book": "Psalm",
+    "chapter": 74,
+    "verses": 23
+  },
+  {
+    "book": "Psalm",
+    "chapter": 75,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 76,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 77,
+    "verses": 20
+  },
+  {
+    "book": "Psalm",
+    "chapter": 78,
+    "verses": 72
+  },
+  {
+    "book": "Psalm",
+    "chapter": 79,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 80,
+    "verses": 19
+  },
+  {
+    "book": "Psalm",
+    "chapter": 81,
+    "verses": 16
+  },
+  {
+    "book": "Psalm",
+    "chapter": 82,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 83,
+    "verses": 18
+  },
+  {
+    "book": "Psalm",
+    "chapter": 84,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 85,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 86,
+    "verses": 17
+  },
+  {
+    "book": "Psalm",
+    "chapter": 87,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 88,
+    "verses": 18
+  },
+  {
+    "book": "Psalm",
+    "chapter": 89,
+    "verses": 52
+  },
+  {
+    "book": "Psalm",
+    "chapter": 90,
+    "verses": 17
+  },
+  {
+    "book": "Psalm",
+    "chapter": 91,
+    "verses": 16
+  },
+  {
+    "book": "Psalm",
+    "chapter": 92,
+    "verses": 15
+  },
+  {
+    "book": "Psalm",
+    "chapter": 93,
+    "verses": 5
+  },
+  {
+    "book": "Psalm",
+    "chapter": 94,
+    "verses": 23
+  },
+  {
+    "book": "Psalm",
+    "chapter": 95,
+    "verses": 11
+  },
+  {
+    "book": "Psalm",
+    "chapter": 96,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 97,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 98,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 99,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 100,
+    "verses": 5
+  },
+  {
+    "book": "Psalm",
+    "chapter": 101,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 102,
+    "verses": 28
+  },
+  {
+    "book": "Psalm",
+    "chapter": 103,
+    "verses": 22
+  },
+  {
+    "book": "Psalm",
+    "chapter": 104,
+    "verses": 35
+  },
+  {
+    "book": "Psalm",
+    "chapter": 105,
+    "verses": 45
+  },
+  {
+    "book": "Psalm",
+    "chapter": 106,
+    "verses": 48
+  },
+  {
+    "book": "Psalm",
+    "chapter": 107,
+    "verses": 43
+  },
+  {
+    "book": "Psalm",
+    "chapter": 108,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 109,
+    "verses": 31
+  },
+  {
+    "book": "Psalm",
+    "chapter": 110,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 111,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 112,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 113,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 114,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 115,
+    "verses": 18
+  },
+  {
+    "book": "Psalm",
+    "chapter": 116,
+    "verses": 19
+  },
+  {
+    "book": "Psalm",
+    "chapter": 117,
+    "verses": 2
+  },
+  {
+    "book": "Psalm",
+    "chapter": 118,
+    "verses": 29
+  },
+  {
+    "book": "Psalm",
+    "chapter": 119,
+    "verses": 176
+  },
+  {
+    "book": "Psalm",
+    "chapter": 120,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 121,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 122,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 123,
+    "verses": 4
+  },
+  {
+    "book": "Psalm",
+    "chapter": 124,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 125,
+    "verses": 5
+  },
+  {
+    "book": "Psalm",
+    "chapter": 126,
+    "verses": 6
+  },
+  {
+    "book": "Psalm",
+    "chapter": 127,
+    "verses": 5
+  },
+  {
+    "book": "Psalm",
+    "chapter": 128,
+    "verses": 6
+  },
+  {
+    "book": "Psalm",
+    "chapter": 129,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 130,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 131,
+    "verses": 3
+  },
+  {
+    "book": "Psalm",
+    "chapter": 132,
+    "verses": 18
+  },
+  {
+    "book": "Psalm",
+    "chapter": 133,
+    "verses": 3
+  },
+  {
+    "book": "Psalm",
+    "chapter": 134,
+    "verses": 3
+  },
+  {
+    "book": "Psalm",
+    "chapter": 135,
+    "verses": 21
+  },
+  {
+    "book": "Psalm",
+    "chapter": 136,
+    "verses": 26
+  },
+  {
+    "book": "Psalm",
+    "chapter": 137,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 138,
+    "verses": 8
+  },
+  {
+    "book": "Psalm",
+    "chapter": 139,
+    "verses": 24
+  },
+  {
+    "book": "Psalm",
+    "chapter": 140,
+    "verses": 13
+  },
+  {
+    "book": "Psalm",
+    "chapter": 141,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 142,
+    "verses": 7
+  },
+  {
+    "book": "Psalm",
+    "chapter": 143,
+    "verses": 12
+  },
+  {
+    "book": "Psalm",
+    "chapter": 144,
+    "verses": 15
+  },
+  {
+    "book": "Psalm",
+    "chapter": 145,
+    "verses": 21
+  },
+  {
+    "book": "Psalm",
+    "chapter": 146,
+    "verses": 10
+  },
+  {
+    "book": "Psalm",
+    "chapter": 147,
+    "verses": 20
+  },
+  {
+    "book": "Psalm",
+    "chapter": 148,
+    "verses": 14
+  },
+  {
+    "book": "Psalm",
+    "chapter": 149,
+    "verses": 9
+  },
+  {
+    "book": "Psalm",
+    "chapter": 150,
+    "verses": 6
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 1,
+    "verses": 33
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 2,
+    "verses": 22
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 3,
+    "verses": 35
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 4,
+    "verses": 27
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 5,
+    "verses": 23
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 6,
+    "verses": 35
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 7,
+    "verses": 27
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 8,
+    "verses": 36
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 9,
+    "verses": 18
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 10,
+    "verses": 32
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 11,
+    "verses": 31
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 12,
+    "verses": 28
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 13,
+    "verses": 25
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 14,
+    "verses": 35
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 15,
+    "verses": 33
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 16,
+    "verses": 33
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 17,
+    "verses": 28
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 18,
+    "verses": 24
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 19,
+    "verses": 29
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 20,
+    "verses": 30
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 21,
+    "verses": 31
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 22,
+    "verses": 29
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 23,
+    "verses": 35
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 24,
+    "verses": 34
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 25,
+    "verses": 28
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 26,
+    "verses": 28
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 27,
+    "verses": 27
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 28,
+    "verses": 28
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 29,
+    "verses": 27
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 30,
+    "verses": 33
+  },
+  {
+    "book": "Provérbios",
+    "chapter": 31,
+    "verses": 31
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 1,
+    "verses": 18
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 2,
+    "verses": 26
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 3,
+    "verses": 22
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 4,
+    "verses": 16
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 5,
+    "verses": 20
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 6,
+    "verses": 12
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 7,
+    "verses": 29
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 8,
+    "verses": 17
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 9,
+    "verses": 18
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 10,
+    "verses": 20
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 11,
+    "verses": 10
+  },
+  {
+    "book": "Eclesiastes",
+    "chapter": 12,
+    "verses": 14
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 1,
+    "verses": 17
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 2,
+    "verses": 17
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 3,
+    "verses": 11
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 4,
+    "verses": 16
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 5,
+    "verses": 16
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 6,
+    "verses": 13
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 7,
+    "verses": 13
+  },
+  {
+    "book": "Cânticos",
+    "chapter": 8,
+    "verses": 14
+  },
+  {
+    "book": "Isaías",
+    "chapter": 1,
+    "verses": 31
+  },
+  {
+    "book": "Isaías",
+    "chapter": 2,
+    "verses": 22
+  },
+  {
+    "book": "Isaías",
+    "chapter": 3,
+    "verses": 26
+  },
+  {
+    "book": "Isaías",
+    "chapter": 4,
+    "verses": 6
+  },
+  {
+    "book": "Isaías",
+    "chapter": 5,
+    "verses": 30
+  },
+  {
+    "book": "Isaías",
+    "chapter": 6,
+    "verses": 13
+  },
+  {
+    "book": "Isaías",
+    "chapter": 7,
+    "verses": 25
+  },
+  {
+    "book": "Isaías",
+    "chapter": 8,
+    "verses": 22
+  },
+  {
+    "book": "Isaías",
+    "chapter": 9,
+    "verses": 21
+  },
+  {
+    "book": "Isaías",
+    "chapter": 10,
+    "verses": 34
+  },
+  {
+    "book": "Isaías",
+    "chapter": 11,
+    "verses": 16
+  },
+  {
+    "book": "Isaías",
+    "chapter": 12,
+    "verses": 6
+  },
+  {
+    "book": "Isaías",
+    "chapter": 13,
+    "verses": 22
+  },
+  {
+    "book": "Isaías",
+    "chapter": 14,
+    "verses": 32
+  },
+  {
+    "book": "Isaías",
+    "chapter": 15,
+    "verses": 9
+  },
+  {
+    "book": "Isaías",
+    "chapter": 16,
+    "verses": 14
+  },
+  {
+    "book": "Isaías",
+    "chapter": 17,
+    "verses": 14
+  },
+  {
+    "book": "Isaías",
+    "chapter": 18,
+    "verses": 7
+  },
+  {
+    "book": "Isaías",
+    "chapter": 19,
+    "verses": 25
+  },
+  {
+    "book": "Isaías",
+    "chapter": 20,
+    "verses": 6
+  },
+  {
+    "book": "Isaías",
+    "chapter": 21,
+    "verses": 17
+  },
+  {
+    "book": "Isaías",
+    "chapter": 22,
+    "verses": 25
+  },
+  {
+    "book": "Isaías",
+    "chapter": 23,
+    "verses": 18
+  },
+  {
+    "book": "Isaías",
+    "chapter": 24,
+    "verses": 23
+  },
+  {
+    "book": "Isaías",
+    "chapter": 25,
+    "verses": 12
+  },
+  {
+    "book": "Isaías",
+    "chapter": 26,
+    "verses": 21
+  },
+  {
+    "book": "Isaías",
+    "chapter": 27,
+    "verses": 13
+  },
+  {
+    "book": "Isaías",
+    "chapter": 28,
+    "verses": 29
+  },
+  {
+    "book": "Isaías",
+    "chapter": 29,
+    "verses": 24
+  },
+  {
+    "book": "Isaías",
+    "chapter": 30,
+    "verses": 33
+  },
+  {
+    "book": "Isaías",
+    "chapter": 31,
+    "verses": 9
+  },
+  {
+    "book": "Isaías",
+    "chapter": 32,
+    "verses": 20
+  },
+  {
+    "book": "Isaías",
+    "chapter": 33,
+    "verses": 24
+  },
+  {
+    "book": "Isaías",
+    "chapter": 34,
+    "verses": 17
+  },
+  {
+    "book": "Isaías",
+    "chapter": 35,
+    "verses": 10
+  },
+  {
+    "book": "Isaías",
+    "chapter": 36,
+    "verses": 22
+  },
+  {
+    "book": "Isaías",
+    "chapter": 37,
+    "verses": 38
+  },
+  {
+    "book": "Isaías",
+    "chapter": 38,
+    "verses": 22
+  },
+  {
+    "book": "Isaías",
+    "chapter": 39,
+    "verses": 8
+  },
+  {
+    "book": "Isaías",
+    "chapter": 40,
+    "verses": 31
+  },
+  {
+    "book": "Isaías",
+    "chapter": 41,
+    "verses": 29
+  },
+  {
+    "book": "Isaías",
+    "chapter": 42,
+    "verses": 25
+  },
+  {
+    "book": "Isaías",
+    "chapter": 43,
+    "verses": 28
+  },
+  {
+    "book": "Isaías",
+    "chapter": 44,
+    "verses": 28
+  },
+  {
+    "book": "Isaías",
+    "chapter": 45,
+    "verses": 25
+  },
+  {
+    "book": "Isaías",
+    "chapter": 46,
+    "verses": 13
+  },
+  {
+    "book": "Isaías",
+    "chapter": 47,
+    "verses": 15
+  },
+  {
+    "book": "Isaías",
+    "chapter": 48,
+    "verses": 22
+  },
+  {
+    "book": "Isaías",
+    "chapter": 49,
+    "verses": 26
+  },
+  {
+    "book": "Isaías",
+    "chapter": 50,
+    "verses": 11
+  },
+  {
+    "book": "Isaías",
+    "chapter": 51,
+    "verses": 23
+  },
+  {
+    "book": "Isaías",
+    "chapter": 52,
+    "verses": 15
+  },
+  {
+    "book": "Isaías",
+    "chapter": 53,
+    "verses": 12
+  },
+  {
+    "book": "Isaías",
+    "chapter": 54,
+    "verses": 17
+  },
+  {
+    "book": "Isaías",
+    "chapter": 55,
+    "verses": 13
+  },
+  {
+    "book": "Isaías",
+    "chapter": 56,
+    "verses": 12
+  },
+  {
+    "book": "Isaías",
+    "chapter": 57,
+    "verses": 21
+  },
+  {
+    "book": "Isaías",
+    "chapter": 58,
+    "verses": 14
+  },
+  {
+    "book": "Isaías",
+    "chapter": 59,
+    "verses": 21
+  },
+  {
+    "book": "Isaías",
+    "chapter": 60,
+    "verses": 22
+  },
+  {
+    "book": "Isaías",
+    "chapter": 61,
+    "verses": 11
+  },
+  {
+    "book": "Isaías",
+    "chapter": 62,
+    "verses": 12
+  },
+  {
+    "book": "Isaías",
+    "chapter": 63,
+    "verses": 19
+  },
+  {
+    "book": "Isaías",
+    "chapter": 64,
+    "verses": 12
+  },
+  {
+    "book": "Isaías",
+    "chapter": 65,
+    "verses": 25
+  },
+  {
+    "book": "Isaías",
+    "chapter": 66,
+    "verses": 24
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 1,
+    "verses": 19
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 2,
+    "verses": 37
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 3,
+    "verses": 25
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 4,
+    "verses": 31
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 5,
+    "verses": 31
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 6,
+    "verses": 30
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 7,
+    "verses": 34
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 8,
+    "verses": 22
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 9,
+    "verses": 26
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 10,
+    "verses": 25
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 11,
+    "verses": 23
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 12,
+    "verses": 17
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 13,
+    "verses": 27
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 14,
+    "verses": 22
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 15,
+    "verses": 21
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 16,
+    "verses": 21
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 17,
+    "verses": 27
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 18,
+    "verses": 23
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 19,
+    "verses": 15
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 20,
+    "verses": 18
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 21,
+    "verses": 14
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 22,
+    "verses": 30
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 23,
+    "verses": 40
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 24,
+    "verses": 10
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 25,
+    "verses": 38
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 26,
+    "verses": 24
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 27,
+    "verses": 22
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 28,
+    "verses": 17
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 29,
+    "verses": 32
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 30,
+    "verses": 24
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 31,
+    "verses": 40
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 32,
+    "verses": 44
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 33,
+    "verses": 26
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 34,
+    "verses": 22
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 35,
+    "verses": 19
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 36,
+    "verses": 32
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 37,
+    "verses": 21
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 38,
+    "verses": 28
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 39,
+    "verses": 18
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 40,
+    "verses": 16
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 41,
+    "verses": 18
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 42,
+    "verses": 22
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 43,
+    "verses": 13
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 44,
+    "verses": 30
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 45,
+    "verses": 5
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 46,
+    "verses": 28
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 47,
+    "verses": 7
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 48,
+    "verses": 47
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 49,
+    "verses": 39
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 50,
+    "verses": 46
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 51,
+    "verses": 64
+  },
+  {
+    "book": "Jeremias",
+    "chapter": 52,
+    "verses": 34
+  },
+  {
+    "book": "Lamentações",
+    "chapter": 1,
+    "verses": 22
+  },
+  {
+    "book": "Lamentações",
+    "chapter": 2,
+    "verses": 22
+  },
+  {
+    "book": "Lamentações",
+    "chapter": 3,
+    "verses": 66
+  },
+  {
+    "book": "Lamentações",
+    "chapter": 4,
+    "verses": 22
+  },
+  {
+    "book": "Lamentações",
+    "chapter": 5,
+    "verses": 22
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 1,
+    "verses": 28
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 2,
+    "verses": 10
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 3,
+    "verses": 27
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 4,
+    "verses": 17
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 5,
+    "verses": 17
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 6,
+    "verses": 14
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 7,
+    "verses": 27
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 8,
+    "verses": 18
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 9,
+    "verses": 11
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 10,
+    "verses": 22
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 11,
+    "verses": 25
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 12,
+    "verses": 28
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 13,
+    "verses": 23
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 14,
+    "verses": 23
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 15,
+    "verses": 8
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 16,
+    "verses": 63
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 17,
+    "verses": 24
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 18,
+    "verses": 32
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 19,
+    "verses": 14
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 20,
+    "verses": 49
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 21,
+    "verses": 32
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 22,
+    "verses": 31
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 23,
+    "verses": 49
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 24,
+    "verses": 27
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 25,
+    "verses": 17
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 26,
+    "verses": 21
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 27,
+    "verses": 36
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 28,
+    "verses": 26
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 29,
+    "verses": 21
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 30,
+    "verses": 26
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 31,
+    "verses": 18
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 32,
+    "verses": 32
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 33,
+    "verses": 33
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 34,
+    "verses": 31
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 35,
+    "verses": 15
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 36,
+    "verses": 38
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 37,
+    "verses": 28
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 38,
+    "verses": 23
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 39,
+    "verses": 29
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 40,
+    "verses": 49
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 41,
+    "verses": 26
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 42,
+    "verses": 20
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 43,
+    "verses": 27
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 44,
+    "verses": 31
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 45,
+    "verses": 25
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 46,
+    "verses": 24
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 47,
+    "verses": 23
+  },
+  {
+    "book": "Ezequiel",
+    "chapter": 48,
+    "verses": 35
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verses": 21
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verses": 49
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verses": 30
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verses": 37
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verses": 31
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verses": 28
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verses": 28
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "verses": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verses": 27
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "verses": 21
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verses": 45
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verses": 13
+  },
+  {
+    "book": "Oséias",
+    "chapter": 1,
+    "verses": 11
+  },
+  {
+    "book": "Oséias",
+    "chapter": 2,
+    "verses": 23
+  },
+  {
+    "book": "Oséias",
+    "chapter": 3,
+    "verses": 5
+  },
+  {
+    "book": "Oséias",
+    "chapter": 4,
+    "verses": 19
+  },
+  {
+    "book": "Oséias",
+    "chapter": 5,
+    "verses": 15
+  },
+  {
+    "book": "Oséias",
+    "chapter": 6,
+    "verses": 11
+  },
+  {
+    "book": "Oséias",
+    "chapter": 7,
+    "verses": 16
+  },
+  {
+    "book": "Oséias",
+    "chapter": 8,
+    "verses": 14
+  },
+  {
+    "book": "Oséias",
+    "chapter": 9,
+    "verses": 17
+  },
+  {
+    "book": "Oséias",
+    "chapter": 10,
+    "verses": 15
+  },
+  {
+    "book": "Oséias",
+    "chapter": 11,
+    "verses": 12
+  },
+  {
+    "book": "Oséias",
+    "chapter": 12,
+    "verses": 14
+  },
+  {
+    "book": "Oséias",
+    "chapter": 13,
+    "verses": 16
+  },
+  {
+    "book": "Oséias",
+    "chapter": 14,
+    "verses": 9
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verses": 20
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verses": 32
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verses": 21
+  },
+  {
+    "book": "Amós",
+    "chapter": 1,
+    "verses": 15
+  },
+  {
+    "book": "Amós",
+    "chapter": 2,
+    "verses": 16
+  },
+  {
+    "book": "Amós",
+    "chapter": 3,
+    "verses": 15
+  },
+  {
+    "book": "Amós",
+    "chapter": 4,
+    "verses": 13
+  },
+  {
+    "book": "Amós",
+    "chapter": 5,
+    "verses": 27
+  },
+  {
+    "book": "Amós",
+    "chapter": 6,
+    "verses": 14
+  },
+  {
+    "book": "Amós",
+    "chapter": 7,
+    "verses": 17
+  },
+  {
+    "book": "Amós",
+    "chapter": 8,
+    "verses": 14
+  },
+  {
+    "book": "Amós",
+    "chapter": 9,
+    "verses": 15
+  },
+  {
+    "book": "Obadias",
+    "chapter": 1,
+    "verses": 21
+  },
+  {
+    "book": "Jonas",
+    "chapter": 1,
+    "verses": 17
+  },
+  {
+    "book": "Jonas",
+    "chapter": 2,
+    "verses": 10
+  },
+  {
+    "book": "Jonas",
+    "chapter": 3,
+    "verses": 10
+  },
+  {
+    "book": "Jonas",
+    "chapter": 4,
+    "verses": 11
+  },
+  {
+    "book": "Miquéias",
+    "chapter": 1,
+    "verses": 16
+  },
+  {
+    "book": "Miquéias",
+    "chapter": 2,
+    "verses": 13
+  },
+  {
+    "book": "Miquéias",
+    "chapter": 3,
+    "verses": 12
+  },
+  {
+    "book": "Miquéias",
+    "chapter": 4,
+    "verses": 13
+  },
+  {
+    "book": "Miquéias",
+    "chapter": 5,
+    "verses": 15
+  },
+  {
+    "book": "Miquéias",
+    "chapter": 6,
+    "verses": 16
+  },
+  {
+    "book": "Miquéias",
+    "chapter": 7,
+    "verses": 20
+  },
+  {
+    "book": "Naum",
+    "chapter": 1,
+    "verses": 15
+  },
+  {
+    "book": "Naum",
+    "chapter": 2,
+    "verses": 13
+  },
+  {
+    "book": "Naum",
+    "chapter": 3,
+    "verses": 19
+  },
+  {
+    "book": "Habacuque",
+    "chapter": 1,
+    "verses": 17
+  },
+  {
+    "book": "Habacuque",
+    "chapter": 2,
+    "verses": 20
+  },
+  {
+    "book": "Habacuque",
+    "chapter": 3,
+    "verses": 19
+  },
+  {
+    "book": "Sofonias",
+    "chapter": 1,
+    "verses": 18
+  },
+  {
+    "book": "Sofonias",
+    "chapter": 2,
+    "verses": 15
+  },
+  {
+    "book": "Sofonias",
+    "chapter": 3,
+    "verses": 20
+  },
+  {
+    "book": "Ageu",
+    "chapter": 1,
+    "verses": 15
+  },
+  {
+    "book": "Ageu",
+    "chapter": 2,
+    "verses": 23
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 1,
+    "verses": 21
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 2,
+    "verses": 13
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 3,
+    "verses": 10
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 4,
+    "verses": 14
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 5,
+    "verses": 11
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 6,
+    "verses": 15
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 7,
+    "verses": 14
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 8,
+    "verses": 23
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 9,
+    "verses": 17
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 10,
+    "verses": 12
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 11,
+    "verses": 17
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 12,
+    "verses": 14
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 13,
+    "verses": 9
+  },
+  {
+    "book": "Zacarias",
+    "chapter": 14,
+    "verses": 21
+  },
+  {
+    "book": "Malaquias",
+    "chapter": 1,
+    "verses": 14
+  },
+  {
+    "book": "Malaquias",
+    "chapter": 2,
+    "verses": 17
+  },
+  {
+    "book": "Malaquias",
+    "chapter": 3,
+    "verses": 18
+  },
+  {
+    "book": "Malaquias",
+    "chapter": 4,
+    "verses": 6
+  },
+  {
+    "book": "Mateus",
+    "chapter": 1,
+    "verses": 25
+  },
+  {
+    "book": "Mateus",
+    "chapter": 2,
+    "verses": 23
+  },
+  {
+    "book": "Mateus",
+    "chapter": 3,
+    "verses": 17
+  },
+  {
+    "book": "Mateus",
+    "chapter": 4,
+    "verses": 25
+  },
+  {
+    "book": "Mateus",
+    "chapter": 5,
+    "verses": 48
+  },
+  {
+    "book": "Mateus",
+    "chapter": 6,
+    "verses": 34
+  },
+  {
+    "book": "Mateus",
+    "chapter": 7,
+    "verses": 29
+  },
+  {
+    "book": "Mateus",
+    "chapter": 8,
+    "verses": 34
+  },
+  {
+    "book": "Mateus",
+    "chapter": 9,
+    "verses": 38
+  },
+  {
+    "book": "Mateus",
+    "chapter": 10,
+    "verses": 42
+  },
+  {
+    "book": "Mateus",
+    "chapter": 11,
+    "verses": 30
+  },
+  {
+    "book": "Mateus",
+    "chapter": 12,
+    "verses": 50
+  },
+  {
+    "book": "Mateus",
+    "chapter": 13,
+    "verses": 58
+  },
+  {
+    "book": "Mateus",
+    "chapter": 14,
+    "verses": 36
+  },
+  {
+    "book": "Mateus",
+    "chapter": 15,
+    "verses": 39
+  },
+  {
+    "book": "Mateus",
+    "chapter": 16,
+    "verses": 28
+  },
+  {
+    "book": "Mateus",
+    "chapter": 17,
+    "verses": 27
+  },
+  {
+    "book": "Mateus",
+    "chapter": 18,
+    "verses": 35
+  },
+  {
+    "book": "Mateus",
+    "chapter": 19,
+    "verses": 30
+  },
+  {
+    "book": "Mateus",
+    "chapter": 20,
+    "verses": 34
+  },
+  {
+    "book": "Mateus",
+    "chapter": 21,
+    "verses": 46
+  },
+  {
+    "book": "Mateus",
+    "chapter": 22,
+    "verses": 46
+  },
+  {
+    "book": "Mateus",
+    "chapter": 23,
+    "verses": 39
+  },
+  {
+    "book": "Mateus",
+    "chapter": 24,
+    "verses": 51
+  },
+  {
+    "book": "Mateus",
+    "chapter": 25,
+    "verses": 46
+  },
+  {
+    "book": "Mateus",
+    "chapter": 26,
+    "verses": 75
+  },
+  {
+    "book": "Mateus",
+    "chapter": 27,
+    "verses": 66
+  },
+  {
+    "book": "Mateus",
+    "chapter": 28,
+    "verses": 20
+  },
+  {
+    "book": "Marcos",
+    "chapter": 1,
+    "verses": 45
+  },
+  {
+    "book": "Marcos",
+    "chapter": 2,
+    "verses": 28
+  },
+  {
+    "book": "Marcos",
+    "chapter": 3,
+    "verses": 35
+  },
+  {
+    "book": "Marcos",
+    "chapter": 4,
+    "verses": 41
+  },
+  {
+    "book": "Marcos",
+    "chapter": 5,
+    "verses": 43
+  },
+  {
+    "book": "Marcos",
+    "chapter": 6,
+    "verses": 56
+  },
+  {
+    "book": "Marcos",
+    "chapter": 7,
+    "verses": 37
+  },
+  {
+    "book": "Marcos",
+    "chapter": 8,
+    "verses": 38
+  },
+  {
+    "book": "Marcos",
+    "chapter": 9,
+    "verses": 50
+  },
+  {
+    "book": "Marcos",
+    "chapter": 10,
+    "verses": 52
+  },
+  {
+    "book": "Marcos",
+    "chapter": 11,
+    "verses": 33
+  },
+  {
+    "book": "Marcos",
+    "chapter": 12,
+    "verses": 44
+  },
+  {
+    "book": "Marcos",
+    "chapter": 13,
+    "verses": 37
+  },
+  {
+    "book": "Marcos",
+    "chapter": 14,
+    "verses": 72
+  },
+  {
+    "book": "Marcos",
+    "chapter": 15,
+    "verses": 47
+  },
+  {
+    "book": "Marcos",
+    "chapter": 16,
+    "verses": 20
+  },
+  {
+    "book": "Lucas",
+    "chapter": 1,
+    "verses": 80
+  },
+  {
+    "book": "Lucas",
+    "chapter": 2,
+    "verses": 52
+  },
+  {
+    "book": "Lucas",
+    "chapter": 3,
+    "verses": 38
+  },
+  {
+    "book": "Lucas",
+    "chapter": 4,
+    "verses": 44
+  },
+  {
+    "book": "Lucas",
+    "chapter": 5,
+    "verses": 39
+  },
+  {
+    "book": "Lucas",
+    "chapter": 6,
+    "verses": 49
+  },
+  {
+    "book": "Lucas",
+    "chapter": 7,
+    "verses": 50
+  },
+  {
+    "book": "Lucas",
+    "chapter": 8,
+    "verses": 56
+  },
+  {
+    "book": "Lucas",
+    "chapter": 9,
+    "verses": 62
+  },
+  {
+    "book": "Lucas",
+    "chapter": 10,
+    "verses": 42
+  },
+  {
+    "book": "Lucas",
+    "chapter": 11,
+    "verses": 54
+  },
+  {
+    "book": "Lucas",
+    "chapter": 12,
+    "verses": 59
+  },
+  {
+    "book": "Lucas",
+    "chapter": 13,
+    "verses": 35
+  },
+  {
+    "book": "Lucas",
+    "chapter": 14,
+    "verses": 35
+  },
+  {
+    "book": "Lucas",
+    "chapter": 15,
+    "verses": 32
+  },
+  {
+    "book": "Lucas",
+    "chapter": 16,
+    "verses": 31
+  },
+  {
+    "book": "Lucas",
+    "chapter": 17,
+    "verses": 37
+  },
+  {
+    "book": "Lucas",
+    "chapter": 18,
+    "verses": 43
+  },
+  {
+    "book": "Lucas",
+    "chapter": 19,
+    "verses": 48
+  },
+  {
+    "book": "Lucas",
+    "chapter": 20,
+    "verses": 47
+  },
+  {
+    "book": "Lucas",
+    "chapter": 21,
+    "verses": 38
+  },
+  {
+    "book": "Lucas",
+    "chapter": 22,
+    "verses": 71
+  },
+  {
+    "book": "Lucas",
+    "chapter": 23,
+    "verses": 56
+  },
+  {
+    "book": "Lucas",
+    "chapter": 24,
+    "verses": 53
+  },
+  {
+    "book": "João",
+    "chapter": 1,
+    "verses": 51
+  },
+  {
+    "book": "João",
+    "chapter": 2,
+    "verses": 25
+  },
+  {
+    "book": "João",
+    "chapter": 3,
+    "verses": 36
+  },
+  {
+    "book": "João",
+    "chapter": 4,
+    "verses": 54
+  },
+  {
+    "book": "João",
+    "chapter": 5,
+    "verses": 47
+  },
+  {
+    "book": "João",
+    "chapter": 6,
+    "verses": 71
+  },
+  {
+    "book": "João",
+    "chapter": 7,
+    "verses": 53
+  },
+  {
+    "book": "João",
+    "chapter": 8,
+    "verses": 59
+  },
+  {
+    "book": "João",
+    "chapter": 9,
+    "verses": 41
+  },
+  {
+    "book": "João",
+    "chapter": 10,
+    "verses": 42
+  },
+  {
+    "book": "João",
+    "chapter": 11,
+    "verses": 57
+  },
+  {
+    "book": "João",
+    "chapter": 12,
+    "verses": 50
+  },
+  {
+    "book": "João",
+    "chapter": 13,
+    "verses": 38
+  },
+  {
+    "book": "João",
+    "chapter": 14,
+    "verses": 31
+  },
+  {
+    "book": "João",
+    "chapter": 15,
+    "verses": 27
+  },
+  {
+    "book": "João",
+    "chapter": 16,
+    "verses": 33
+  },
+  {
+    "book": "João",
+    "chapter": 17,
+    "verses": 26
+  },
+  {
+    "book": "João",
+    "chapter": 18,
+    "verses": 40
+  },
+  {
+    "book": "João",
+    "chapter": 19,
+    "verses": 42
+  },
+  {
+    "book": "João",
+    "chapter": 20,
+    "verses": 31
+  },
+  {
+    "book": "João",
+    "chapter": 21,
+    "verses": 25
+  },
+  {
+    "book": "Atos",
+    "chapter": 1,
+    "verses": 26
+  },
+  {
+    "book": "Atos",
+    "chapter": 2,
+    "verses": 47
+  },
+  {
+    "book": "Atos",
+    "chapter": 3,
+    "verses": 26
+  },
+  {
+    "book": "Atos",
+    "chapter": 4,
+    "verses": 37
+  },
+  {
+    "book": "Atos",
+    "chapter": 5,
+    "verses": 42
+  },
+  {
+    "book": "Atos",
+    "chapter": 6,
+    "verses": 15
+  },
+  {
+    "book": "Atos",
+    "chapter": 7,
+    "verses": 60
+  },
+  {
+    "book": "Atos",
+    "chapter": 8,
+    "verses": 40
+  },
+  {
+    "book": "Atos",
+    "chapter": 9,
+    "verses": 43
+  },
+  {
+    "book": "Atos",
+    "chapter": 10,
+    "verses": 48
+  },
+  {
+    "book": "Atos",
+    "chapter": 11,
+    "verses": 30
+  },
+  {
+    "book": "Atos",
+    "chapter": 12,
+    "verses": 25
+  },
+  {
+    "book": "Atos",
+    "chapter": 13,
+    "verses": 52
+  },
+  {
+    "book": "Atos",
+    "chapter": 14,
+    "verses": 28
+  },
+  {
+    "book": "Atos",
+    "chapter": 15,
+    "verses": 41
+  },
+  {
+    "book": "Atos",
+    "chapter": 16,
+    "verses": 40
+  },
+  {
+    "book": "Atos",
+    "chapter": 17,
+    "verses": 34
+  },
+  {
+    "book": "Atos",
+    "chapter": 18,
+    "verses": 28
+  },
+  {
+    "book": "Atos",
+    "chapter": 19,
+    "verses": 41
+  },
+  {
+    "book": "Atos",
+    "chapter": 20,
+    "verses": 38
+  },
+  {
+    "book": "Atos",
+    "chapter": 21,
+    "verses": 40
+  },
+  {
+    "book": "Atos",
+    "chapter": 22,
+    "verses": 30
+  },
+  {
+    "book": "Atos",
+    "chapter": 23,
+    "verses": 35
+  },
+  {
+    "book": "Atos",
+    "chapter": 24,
+    "verses": 27
+  },
+  {
+    "book": "Atos",
+    "chapter": 25,
+    "verses": 27
+  },
+  {
+    "book": "Atos",
+    "chapter": 26,
+    "verses": 32
+  },
+  {
+    "book": "Atos",
+    "chapter": 27,
+    "verses": 44
+  },
+  {
+    "book": "Atos",
+    "chapter": 28,
+    "verses": 31
+  },
+  {
+    "book": "Romanos",
+    "chapter": 1,
+    "verses": 32
+  },
+  {
+    "book": "Romanos",
+    "chapter": 2,
+    "verses": 29
+  },
+  {
+    "book": "Romanos",
+    "chapter": 3,
+    "verses": 31
+  },
+  {
+    "book": "Romanos",
+    "chapter": 4,
+    "verses": 25
+  },
+  {
+    "book": "Romanos",
+    "chapter": 5,
+    "verses": 21
+  },
+  {
+    "book": "Romanos",
+    "chapter": 6,
+    "verses": 23
+  },
+  {
+    "book": "Romanos",
+    "chapter": 7,
+    "verses": 25
+  },
+  {
+    "book": "Romanos",
+    "chapter": 8,
+    "verses": 39
+  },
+  {
+    "book": "Romanos",
+    "chapter": 9,
+    "verses": 33
+  },
+  {
+    "book": "Romanos",
+    "chapter": 10,
+    "verses": 21
+  },
+  {
+    "book": "Romanos",
+    "chapter": 11,
+    "verses": 36
+  },
+  {
+    "book": "Romanos",
+    "chapter": 12,
+    "verses": 21
+  },
+  {
+    "book": "Romanos",
+    "chapter": 13,
+    "verses": 14
+  },
+  {
+    "book": "Romanos",
+    "chapter": 14,
+    "verses": 23
+  },
+  {
+    "book": "Romanos",
+    "chapter": 15,
+    "verses": 33
+  },
+  {
+    "book": "Romanos",
+    "chapter": 16,
+    "verses": 27
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 1,
+    "verses": 31
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 2,
+    "verses": 16
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 3,
+    "verses": 23
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 4,
+    "verses": 21
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 5,
+    "verses": 13
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 6,
+    "verses": 20
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 7,
+    "verses": 40
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 8,
+    "verses": 13
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 9,
+    "verses": 27
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 10,
+    "verses": 33
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 11,
+    "verses": 34
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 12,
+    "verses": 31
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 13,
+    "verses": 13
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 14,
+    "verses": 40
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 15,
+    "verses": 58
+  },
+  {
+    "book": "1 Coríntios",
+    "chapter": 16,
+    "verses": 24
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 1,
+    "verses": 24
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 2,
+    "verses": 17
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 3,
+    "verses": 18
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 4,
+    "verses": 18
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 5,
+    "verses": 21
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 6,
+    "verses": 18
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 7,
+    "verses": 16
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 8,
+    "verses": 24
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 9,
+    "verses": 15
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 10,
+    "verses": 18
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 11,
+    "verses": 33
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 12,
+    "verses": 21
+  },
+  {
+    "book": "2 Coríntios",
+    "chapter": 13,
+    "verses": 14
+  },
+  {
+    "book": "Gálatas",
+    "chapter": 1,
+    "verses": 24
+  },
+  {
+    "book": "Gálatas",
+    "chapter": 2,
+    "verses": 21
+  },
+  {
+    "book": "Gálatas",
+    "chapter": 3,
+    "verses": 29
+  },
+  {
+    "book": "Gálatas",
+    "chapter": 4,
+    "verses": 31
+  },
+  {
+    "book": "Gálatas",
+    "chapter": 5,
+    "verses": 26
+  },
+  {
+    "book": "Gálatas",
+    "chapter": 6,
+    "verses": 18
+  },
+  {
+    "book": "Efésios",
+    "chapter": 1,
+    "verses": 23
+  },
+  {
+    "book": "Efésios",
+    "chapter": 2,
+    "verses": 22
+  },
+  {
+    "book": "Efésios",
+    "chapter": 3,
+    "verses": 21
+  },
+  {
+    "book": "Efésios",
+    "chapter": 4,
+    "verses": 32
+  },
+  {
+    "book": "Efésios",
+    "chapter": 5,
+    "verses": 33
+  },
+  {
+    "book": "Efésios",
+    "chapter": 6,
+    "verses": 24
+  },
+  {
+    "book": "Filipenses",
+    "chapter": 1,
+    "verses": 30
+  },
+  {
+    "book": "Filipenses",
+    "chapter": 2,
+    "verses": 30
+  },
+  {
+    "book": "Filipenses",
+    "chapter": 3,
+    "verses": 21
+  },
+  {
+    "book": "Filipenses",
+    "chapter": 4,
+    "verses": 23
+  },
+  {
+    "book": "Colossenses",
+    "chapter": 1,
+    "verses": 29
+  },
+  {
+    "book": "Colossenses",
+    "chapter": 2,
+    "verses": 23
+  },
+  {
+    "book": "Colossenses",
+    "chapter": 3,
+    "verses": 25
+  },
+  {
+    "book": "Colossenses",
+    "chapter": 4,
+    "verses": 18
+  },
+  {
+    "book": "1 Tessalonicenses",
+    "chapter": 1,
+    "verses": 10
+  },
+  {
+    "book": "1 Tessalonicenses",
+    "chapter": 2,
+    "verses": 20
+  },
+  {
+    "book": "1 Tessalonicenses",
+    "chapter": 3,
+    "verses": 13
+  },
+  {
+    "book": "1 Tessalonicenses",
+    "chapter": 4,
+    "verses": 18
+  },
+  {
+    "book": "1 Tessalonicenses",
+    "chapter": 5,
+    "verses": 28
+  },
+  {
+    "book": "2 Tessalonicenses",
+    "chapter": 1,
+    "verses": 12
+  },
+  {
+    "book": "2 Tessalonicenses",
+    "chapter": 2,
+    "verses": 17
+  },
+  {
+    "book": "2 Tessalonicenses",
+    "chapter": 3,
+    "verses": 18
+  },
+  {
+    "book": "1 Timóteo",
+    "chapter": 1,
+    "verses": 20
+  },
+  {
+    "book": "1 Timóteo",
+    "chapter": 2,
+    "verses": 15
+  },
+  {
+    "book": "1 Timóteo",
+    "chapter": 3,
+    "verses": 16
+  },
+  {
+    "book": "1 Timóteo",
+    "chapter": 4,
+    "verses": 16
+  },
+  {
+    "book": "1 Timóteo",
+    "chapter": 5,
+    "verses": 25
+  },
+  {
+    "book": "1 Timóteo",
+    "chapter": 6,
+    "verses": 21
+  },
+  {
+    "book": "2 Timóteo",
+    "chapter": 1,
+    "verses": 18
+  },
+  {
+    "book": "2 Timóteo",
+    "chapter": 2,
+    "verses": 26
+  },
+  {
+    "book": "2 Timóteo",
+    "chapter": 3,
+    "verses": 17
+  },
+  {
+    "book": "2 Timóteo",
+    "chapter": 4,
+    "verses": 22
+  },
+  {
+    "book": "Tito",
+    "chapter": 1,
+    "verses": 16
+  },
+  {
+    "book": "Tito",
+    "chapter": 2,
+    "verses": 15
+  },
+  {
+    "book": "Tito",
+    "chapter": 3,
+    "verses": 15
+  },
+  {
+    "book": "Filemom",
+    "chapter": 1,
+    "verses": 25
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 1,
+    "verses": 14
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 2,
+    "verses": 18
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 3,
+    "verses": 19
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 4,
+    "verses": 16
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 5,
+    "verses": 14
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 6,
+    "verses": 20
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 7,
+    "verses": 28
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 8,
+    "verses": 13
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 9,
+    "verses": 28
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 10,
+    "verses": 39
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 11,
+    "verses": 40
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 12,
+    "verses": 29
+  },
+  {
+    "book": "Hebreus",
+    "chapter": 13,
+    "verses": 25
+  },
+  {
+    "book": "Tiago",
+    "chapter": 1,
+    "verses": 27
+  },
+  {
+    "book": "Tiago",
+    "chapter": 2,
+    "verses": 26
+  },
+  {
+    "book": "Tiago",
+    "chapter": 3,
+    "verses": 18
+  },
+  {
+    "book": "Tiago",
+    "chapter": 4,
+    "verses": 17
+  },
+  {
+    "book": "Tiago",
+    "chapter": 5,
+    "verses": 20
+  },
+  {
+    "book": "1 Pedro",
+    "chapter": 1,
+    "verses": 25
+  },
+  {
+    "book": "1 Pedro",
+    "chapter": 2,
+    "verses": 25
+  },
+  {
+    "book": "1 Pedro",
+    "chapter": 3,
+    "verses": 22
+  },
+  {
+    "book": "1 Pedro",
+    "chapter": 4,
+    "verses": 19
+  },
+  {
+    "book": "1 Pedro",
+    "chapter": 5,
+    "verses": 14
+  },
+  {
+    "book": "2 Pedro",
+    "chapter": 1,
+    "verses": 21
+  },
+  {
+    "book": "2 Pedro",
+    "chapter": 2,
+    "verses": 22
+  },
+  {
+    "book": "2 Pedro",
+    "chapter": 3,
+    "verses": 18
+  },
+  {
+    "book": "1 João",
+    "chapter": 1,
+    "verses": 10
+  },
+  {
+    "book": "1 João",
+    "chapter": 2,
+    "verses": 29
+  },
+  {
+    "book": "1 João",
+    "chapter": 3,
+    "verses": 24
+  },
+  {
+    "book": "1 João",
+    "chapter": 4,
+    "verses": 21
+  },
+  {
+    "book": "1 João",
+    "chapter": 5,
+    "verses": 21
+  },
+  {
+    "book": "2 João",
+    "chapter": 1,
+    "verses": 13
+  },
+  {
+    "book": "3 João",
+    "chapter": 1,
+    "verses": 14
+  },
+  {
+    "book": "Judas",
+    "chapter": 1,
+    "verses": 25
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 1,
+    "verses": 20
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 2,
+    "verses": 29
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 3,
+    "verses": 22
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 4,
+    "verses": 11
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 5,
+    "verses": 14
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 6,
+    "verses": 17
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 7,
+    "verses": 17
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 8,
+    "verses": 13
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 9,
+    "verses": 21
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 10,
+    "verses": 11
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 11,
+    "verses": 19
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 12,
+    "verses": 17
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 13,
+    "verses": 18
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 14,
+    "verses": 20
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 15,
+    "verses": 8
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 16,
+    "verses": 21
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 17,
+    "verses": 18
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 18,
+    "verses": 24
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 19,
+    "verses": 21
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 20,
+    "verses": 15
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 21,
+    "verses": 27
+  },
+  {
+    "book": "Apocalipse",
+    "chapter": 22,
+    "verses": 21
+  }
+]

@@ -1,0 +1,2 @@
+-dontwarn android.window.BackEvent
+-dontwarn io.flutter.view.FlutterView
