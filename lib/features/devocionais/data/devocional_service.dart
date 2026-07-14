@@ -146,6 +146,26 @@ class DevocionalService {
     return filtered.map((json) => Devocional.fromJson(json)).toList();
   }
 
+  Future<void> adicionarDevocional(Map<String, dynamic> devocional) async {
+    _mockDevocionais.add({
+      'id': DateTime.now().millisecondsSinceEpoch.toString(),
+      'titulo': devocional['titulo'],
+      'resumo': devocional['resumo'] ?? '',
+      'conteudo_completo': devocional['conteudo_completo'] ?? '',
+      'tema': devocional['tema'] ?? 'outro',
+      'autor': devocional['autor'] ?? 'Ministério Digital',
+      'data': DateTime.now().toIso8601String(),
+      'versiculo_chave': {
+        'livro': devocional['livro'] ?? 'Salmos',
+        'capitulo': int.tryParse(devocional['capitulo']?.toString() ?? '') ?? 1,
+        'versiculo': int.tryParse(devocional['versiculo']?.toString() ?? '') ?? 1,
+      },
+      'duracao_minutos': 5,
+      'ativo': true,
+      'created_at': DateTime.now().toIso8601String(),
+    });
+  }
+
   Future<Devocional?> getDevocionalByDate(String date) async {
     final found = _mockDevocionais.firstWhere(
       (d) => (d['data'] as String).startsWith(date),

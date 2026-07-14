@@ -132,5 +132,19 @@ class VideoService {
     return filtered.map((json) => Video.fromJson(json)).toList();
   }
 
+  Future<void> adicionarVideo(Map<String, dynamic> video) async {
+    _mockVideos.add({
+      'id': DateTime.now().millisecondsSinceEpoch.toString(),
+      'titulo': video['titulo'],
+      'descricao': video['descricao'] ?? '',
+      'youtube_url': video['youtube_url'] ?? '',
+      'thumbnail_url': null,
+      'categoria': video['categoria'] ?? 'pregacao',
+      'duracao_segundos': 0,
+      'ativo': true,
+      'created_at': DateTime.now().toIso8601String(),
+    });
+  }
+
   List<String> getCategorias() => _categoriaLabels.keys.toList();
 }

@@ -119,5 +119,19 @@ class PodcastService {
     return filtered.map((json) => Podcast.fromJson(json)).toList();
   }
 
+  Future<void> adicionarPodcast(Map<String, dynamic> podcast) async {
+    _mockPodcasts.add({
+      'id': DateTime.now().millisecondsSinceEpoch.toString(),
+      'titulo': podcast['titulo'],
+      'descricao': podcast['descricao'] ?? '',
+      'audio_url': podcast['audio_url'] ?? '',
+      'capa_url': podcast['capa_url'],
+      'duracao_segundos': int.tryParse(podcast['duracao']?.toString() ?? '') ?? 0,
+      'categoria': podcast['categoria'] ?? 'reflexao',
+      'ativo': true,
+      'created_at': DateTime.now().toIso8601String(),
+    });
+  }
+
   List<String> getCategorias() => _categoriaLabels.keys.toList();
 }

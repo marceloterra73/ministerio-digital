@@ -7,14 +7,14 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/models/content_models.dart';
 
-class AdminConteudosScreen extends StatefulWidget {
+class AdminConteudosScreen extends ConsumerStatefulWidget {
   const AdminConteudosScreen({super.key});
 
   @override
-  State<AdminConteudosScreen> createState() => _AdminConteudosScreenState();
+  ConsumerState<AdminConteudosScreen> createState() => _AdminConteudosScreenState();
 }
 
-class _AdminConteudosScreenState extends State<AdminConteudosScreen>
+class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   final _refreshKeys = <int, UniqueKey>{};
@@ -64,23 +64,369 @@ class _AdminConteudosScreenState extends State<AdminConteudosScreen>
       floatingActionButton: Builder(
         builder: (context) {
           final index = _tabController.index;
-          if (index <= 1) {
-            return FloatingActionButton(
-              onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Em breve'),
-                    behavior: SnackBarBehavior.floating,
-                  ),
-                );
-              },
-              backgroundColor: AppColors.secondary,
-              foregroundColor: AppColors.primaryDark,
-              child: Icon(PhosphorIcons.plus()),
-            );
-          }
-          return const SizedBox.shrink();
+          return FloatingActionButton(
+            onPressed: () => _mostrarDialogAdicionar(context, index),
+            backgroundColor: AppColors.secondary,
+            foregroundColor: AppColors.primaryDark,
+            child: Icon(PhosphorIcons.plus()),
+          );
         },
+      ),
+    );
+  }
+
+  void _mostrarDialogAdicionar(BuildContext context, int tabIndex) {
+    switch (tabIndex) {
+      case 0:
+        _mostrarDialogAdicionarOracao(context);
+      case 1:
+        _mostrarDialogAdicionarDevocional(context);
+      case 2:
+        _mostrarDialogAdicionarVideo(context);
+      case 3:
+        _mostrarDialogAdicionarPodcast(context);
+    }
+  }
+
+  void _mostrarDialogAdicionarOracao(BuildContext context) {
+    final tituloCtrl = TextEditingController();
+    final textCtrl = TextEditingController();
+    String temaSelecionado = 'familia';
+
+    showDialog(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setDialogState) => AlertDialog(
+          title: const Text('Adicionar Oração'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: tituloCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'Título',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                DropdownButtonFormField<String>(
+                  value: temaSelecionado,
+                  decoration: const InputDecoration(
+                    labelText: 'Tema',
+                    border: OutlineInputBorder(),
+                  ),
+                  items: const [
+                    DropdownMenuItem(value: 'familia', child: Text('Família')),
+                    DropdownMenuItem(value: 'saude', child: Text('Saúde')),
+                    DropdownMenuItem(value: 'ansiedade', child: Text('Ansiedade')),
+                    DropdownMenuItem(value: 'casamento', child: Text('Casamento')),
+                    DropdownMenuItem(value: 'medo', child: Text('Medo')),
+                    DropdownMenuItem(value: 'gratidao', child: Text('Gratidão')),
+                    DropdownMenuItem(value: 'perdao', child: Text('Perdão')),
+                    DropdownMenuItem(value: 'trabalho', child: Text('Trabalho')),
+                  ],
+                  onChanged: (v) => setDialogState(() => temaSelecionado = v!),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: textCtrl,
+                  maxLines: 6,
+                  decoration: const InputDecoration(
+                    labelText: 'Texto da oração',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Cancelar'),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                if (tituloCtrl.text.isEmpty) return;
+                final repo = ref.read(adminRepositoryProvider);
+                await repo.adicionarConteudo('oracao', {
+                  'titulo': tituloCtrl.text,
+                  'texto': textCtrl.text,
+                  'tema': temaSelecionado,
+                });
+                if (ctx.mounted) Navigator.pop(ctx);
+                setState(() {});
+              },
+              child: const Text('Salvar'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _mostrarDialogAdicionarDevocional(BuildContext context) {
+    final tituloCtrl = TextEditingController();
+    final resumoCtrl = TextEditingController();
+    final conteudoCtrl = TextEditingController();
+    String temaSelecionado = 'paz';
+
+    showDialog(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setDialogState) => AlertDialog(
+          title: const Text('Adicionar Devocional'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: tituloCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'Título',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                DropdownButtonFormField<String>(
+                  value: temaSelecionado,
+                  decoration: const InputDecoration(
+                    labelText: 'Tema',
+                    border: OutlineInputBorder(),
+                  ),
+                  items: const [
+                    DropdownMenuItem(value: 'paz', child: Text('Paz')),
+                    DropdownMenuItem(value: 'confianca', child: Text('Confiança')),
+                    DropdownMenuItem(value: 'amor', child: Text('Amor')),
+                    DropdownMenuItem(value: 'fe', child: Text('Fé')),
+                    DropdownMenuItem(value: 'perdao', child: Text('Perdão')),
+                    DropdownMenuItem(value: 'proposito', child: Text('Propósito')),
+                  ],
+                  onChanged: (v) => setDialogState(() => temaSelecionado = v!),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: resumoCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'Resumo',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: conteudoCtrl,
+                  maxLines: 8,
+                  decoration: const InputDecoration(
+                    labelText: 'Conteúdo completo',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Cancelar'),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                if (tituloCtrl.text.isEmpty) return;
+                final repo = ref.read(adminRepositoryProvider);
+                await repo.adicionarConteudo('devocional', {
+                  'titulo': tituloCtrl.text,
+                  'resumo': resumoCtrl.text,
+                  'conteudo_completo': conteudoCtrl.text,
+                  'tema': temaSelecionado,
+                });
+                if (ctx.mounted) Navigator.pop(ctx);
+                setState(() {});
+              },
+              child: const Text('Salvar'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _mostrarDialogAdicionarVideo(BuildContext context) {
+    final tituloCtrl = TextEditingController();
+    final descricaoCtrl = TextEditingController();
+    final urlCtrl = TextEditingController();
+    String categoriaSelecionada = 'pregacao';
+
+    showDialog(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setDialogState) => AlertDialog(
+          title: const Text('Adicionar Vídeo'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: tituloCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'Título',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: urlCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'URL do YouTube',
+                    hintText: 'https://youtube.com/watch?v=...',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                DropdownButtonFormField<String>(
+                  value: categoriaSelecionada,
+                  decoration: const InputDecoration(
+                    labelText: 'Categoria',
+                    border: OutlineInputBorder(),
+                  ),
+                  items: const [
+                    DropdownMenuItem(value: 'pregacao', child: Text('Pregação')),
+                    DropdownMenuItem(value: 'estudo', child: Text('Estudo')),
+                    DropdownMenuItem(value: 'louvor', child: Text('Louvor')),
+                    DropdownMenuItem(value: 'jovens', child: Text('Jovens')),
+                    DropdownMenuItem(value: 'eventos', child: Text('Eventos')),
+                    DropdownMenuItem(value: 'oracao', child: Text('Oração')),
+                  ],
+                  onChanged: (v) => setDialogState(() => categoriaSelecionada = v!),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: descricaoCtrl,
+                  maxLines: 3,
+                  decoration: const InputDecoration(
+                    labelText: 'Descrição',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Cancelar'),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                if (tituloCtrl.text.isEmpty || urlCtrl.text.isEmpty) return;
+                final repo = ref.read(adminRepositoryProvider);
+                await repo.adicionarConteudo('video', {
+                  'titulo': tituloCtrl.text,
+                  'youtube_url': urlCtrl.text,
+                  'descricao': descricaoCtrl.text,
+                  'categoria': categoriaSelecionada,
+                });
+                if (ctx.mounted) Navigator.pop(ctx);
+                setState(() {});
+              },
+              child: const Text('Salvar'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _mostrarDialogAdicionarPodcast(BuildContext context) {
+    final tituloCtrl = TextEditingController();
+    final audioUrlCtrl = TextEditingController();
+    final capaUrlCtrl = TextEditingController();
+    final descricaoCtrl = TextEditingController();
+    String categoriaSelecionada = 'reflexao';
+
+    showDialog(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setDialogState) => AlertDialog(
+          title: const Text('Adicionar Podcast'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: tituloCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'Título',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: audioUrlCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'URL do Áudio',
+                    hintText: 'https://...mp3',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: capaUrlCtrl,
+                  decoration: const InputDecoration(
+                    labelText: 'URL da Capa (opcional)',
+                    hintText: 'https://...jpg',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                DropdownButtonFormField<String>(
+                  value: categoriaSelecionada,
+                  decoration: const InputDecoration(
+                    labelText: 'Categoria',
+                    border: OutlineInputBorder(),
+                  ),
+                  items: const [
+                    DropdownMenuItem(value: 'reflexao', child: Text('Reflexão')),
+                    DropdownMenuItem(value: 'pilula', child: Text('Pílulas de Fé')),
+                    DropdownMenuItem(value: 'entrevista', child: Text('Entrevista')),
+                    DropdownMenuItem(value: 'estudo', child: Text('Estudo')),
+                  ],
+                  onChanged: (v) => setDialogState(() => categoriaSelecionada = v!),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: descricaoCtrl,
+                  maxLines: 3,
+                  decoration: const InputDecoration(
+                    labelText: 'Descrição',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Cancelar'),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                if (tituloCtrl.text.isEmpty || audioUrlCtrl.text.isEmpty) return;
+                final repo = ref.read(adminRepositoryProvider);
+                await repo.adicionarConteudo('podcast', {
+                  'titulo': tituloCtrl.text,
+                  'audio_url': audioUrlCtrl.text,
+                  'capa_url': capaUrlCtrl.text.isNotEmpty ? capaUrlCtrl.text : null,
+                  'descricao': descricaoCtrl.text,
+                  'categoria': categoriaSelecionada,
+                });
+                if (ctx.mounted) Navigator.pop(ctx);
+                setState(() {});
+              },
+              child: const Text('Salvar'),
+            ),
+          ],
+        ),
       ),
     );
   }

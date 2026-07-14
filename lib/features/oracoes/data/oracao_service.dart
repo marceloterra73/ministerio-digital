@@ -205,8 +205,21 @@ class OracaoService {
     return Oracao.fromJson(found);
   }
 
+  Future<void> adicionarOracao(Map<String, dynamic> oracao) async {
+    _mockOracoes.add({
+      'id': DateTime.now().millisecondsSinceEpoch.toString(),
+      'titulo': oracao['titulo'],
+      'texto': oracao['texto'] ?? '',
+      'tema': oracao['tema'] ?? 'outro',
+      'audio_url': null,
+      'tempo_estimado_min': null,
+      'versiculos_relacionados': [],
+      'ativo': true,
+      'created_at': DateTime.now().toIso8601String(),
+    });
+  }
+
   Future<List<Oracao>> searchOracoes(String query) async {
-    // TODO: Substituir por Supabase
     final filtered = _mockOracoes.where((o) {
       final titulo = (o['titulo'] as String).toLowerCase();
       final texto = (o['texto'] as String).toLowerCase();

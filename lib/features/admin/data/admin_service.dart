@@ -150,4 +150,8 @@ class AdminService {
   Future<void> removerConteudo(String tipo, String id) async {
     // Mock: em produção removeria do backend
   }
+
+  Future<void> adicionarConteudo(String tipo, Map<String, dynamic> dados) async {
+    // Delegado para o service específico no repositório
+  }
 }
