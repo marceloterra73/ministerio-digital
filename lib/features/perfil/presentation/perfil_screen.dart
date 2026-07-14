@@ -133,7 +133,7 @@ class PerfilScreen extends ConsumerWidget {
                   context,
                   icon: PhosphorIcons.crown(),
                   title: 'Premium',
-                  onTap: () {},
+                  onTap: () => context.push('/doacoes'),
                   badge: 'NOVO',
                 ),
                 const SizedBox(height: 16),
