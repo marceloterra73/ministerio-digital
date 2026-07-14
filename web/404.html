@@ -4,14 +4,9 @@
   <meta charset="utf-8">
   <title>ministerio_digital</title>
   <script>
-    var redirect = sessionStorage.redirect;
-    delete sessionStorage.redirect;
-    if (redirect && redirect != location.href) {
-      history.replaceState(null, null, redirect);
-    }
+    sessionStorage.redirect = location.href;
+    window.location.replace('/ministerio-digital/');
   </script>
 </head>
-<body>
-  <script src="flutter_bootstrap.js"></script>
-</body>
+<body></body>
 </html>
