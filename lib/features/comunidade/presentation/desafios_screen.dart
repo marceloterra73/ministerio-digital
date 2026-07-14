@@ -8,11 +8,18 @@ import '../../../core/theme/app_typography.dart';
 import '../../../shared/models/content_models.dart';
 import '../../../shared/widgets/custom_card.dart';
 
-class DesafiosScreen extends ConsumerWidget {
+class DesafiosScreen extends ConsumerStatefulWidget {
   const DesafiosScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<DesafiosScreen> createState() => _DesafiosScreenState();
+}
+
+class _DesafiosScreenState extends ConsumerState<DesafiosScreen> {
+  final Set<String> _participandoIds = {};
+
+  @override
+  Widget build(BuildContext context) {
     final desafioRepo = ref.read(desafioRepositoryProvider);
 
     return Scaffold(
@@ -57,19 +64,16 @@ class DesafiosScreen extends ConsumerWidget {
           return ListView(
             padding: const EdgeInsets.all(16),
             children: [
-              // Primeiro desafio como "em destaque"
               Text('Em Destaque', style: AppTypography.subtitle1),
               const SizedBox(height: 8),
-              _buildDesafioDestaque(context, desafios.first),
+              _buildDesafioDestaque(desafios.first),
               const SizedBox(height: 24),
-
-              // Todos os desafios
               Text('Todos os Desafios', style: AppTypography.subtitle1),
               const SizedBox(height: 12),
               ...desafios.map((desafio) {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 12),
-                  child: _buildDesafioCard(context, desafio),
+                  child: _buildDesafioCard(desafio),
                 );
               }),
             ],
@@ -79,9 +83,14 @@ class DesafiosScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildDesafioDestaque(BuildContext context, Desafio desafio) {
+  bool _estaParticipando(Desafio desafio) => _participandoIds.contains(desafio.id);
+
+  Widget _buildDesafioDestaque(Desafio desafio) {
+    final participando = _estaParticipando(desafio);
     return CustomCard(
-      onTap: () => _mostrarDialogParticipar(context, desafio),
+      onTap: () => participando
+          ? _mostrarDialogJaParticipando(desafio)
+          : _mostrarDialogParticipar(desafio),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -95,7 +104,25 @@ class DesafiosScreen extends ConsumerWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(desafio.titulo, style: AppTypography.subtitle2),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(desafio.titulo, style: AppTypography.subtitle2),
+                          ),
+                          if (participando)
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: AppColors.success.withOpacity(0.15),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: const Text(
+                                'Participando',
+                                style: TextStyle(fontSize: 11, color: AppColors.success, fontWeight: FontWeight.w600),
+                              ),
+                            ),
+                        ],
+                      ),
                       Text(
                         '${desafio.duracaoDias} dias',
                         style: AppTypography.bodySmall,
@@ -160,8 +187,10 @@ class DesafiosScreen extends ConsumerWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => _mostrarDialogParticipar(context, desafio),
-                child: const Text('Participar'),
+                onPressed: participando
+                    ? null
+                    : () => _mostrarDialogParticipar(desafio),
+                child: Text(participando ? 'Participando ✓' : 'Participar'),
               ),
             ),
           ],
@@ -170,9 +199,12 @@ class DesafiosScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildDesafioCard(BuildContext context, Desafio desafio) {
+  Widget _buildDesafioCard(Desafio desafio) {
+    final participando = _estaParticipando(desafio);
     return CustomCard(
-      onTap: () => _mostrarDialogParticipar(context, desafio),
+      onTap: () => participando
+          ? _mostrarDialogJaParticipando(desafio)
+          : _mostrarDialogParticipar(desafio),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Row(
@@ -184,11 +216,9 @@ class DesafiosScreen extends ConsumerWidget {
                 color: AppColors.secondary.withOpacity(0.12),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Icon(
-                PhosphorIcons.fire(),
-                color: AppColors.secondary,
-                size: 24,
-              ),
+              child: participando
+                  ? const Icon(Icons.check, color: AppColors.success, size: 24)
+                  : Icon(PhosphorIcons.fire(), color: AppColors.secondary, size: 24),
             ),
             const SizedBox(width: 12),
             Expanded(
@@ -198,8 +228,10 @@ class DesafiosScreen extends ConsumerWidget {
                   Text(desafio.titulo, style: AppTypography.subtitle2),
                   const SizedBox(height: 4),
                   Text(
-                    '${desafio.duracaoDias} dias',
-                    style: AppTypography.bodySmall,
+                    participando ? 'Você está participando' : '${desafio.duracaoDias} dias',
+                    style: AppTypography.bodySmall.copyWith(
+                      color: participando ? AppColors.success : null,
+                    ),
                   ),
                 ],
               ),
@@ -215,7 +247,7 @@ class DesafiosScreen extends ConsumerWidget {
     );
   }
 
-  void _mostrarDialogParticipar(BuildContext context, Desafio desafio) {
+  void _mostrarDialogParticipar(Desafio desafio) {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -238,6 +270,7 @@ class DesafiosScreen extends ConsumerWidget {
           ),
           ElevatedButton(
             onPressed: () {
+              setState(() => _participandoIds.add(desafio.id));
               Navigator.pop(ctx);
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
@@ -245,10 +278,43 @@ class DesafiosScreen extends ConsumerWidget {
                     'Você está participando do "${desafio.titulo}"!',
                   ),
                   behavior: SnackBarBehavior.floating,
+                  backgroundColor: AppColors.success,
                 ),
               );
             },
             child: const Text('Participar'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _mostrarDialogJaParticipando(Desafio desafio) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(desafio.titulo),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.check_circle, color: AppColors.success, size: 48),
+            const SizedBox(height: 12),
+            const Text(
+              'Você já está participando deste desafio!',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Duração: ${desafio.duracaoDias} dias',
+              style: const TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        actions: [
+          ElevatedButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Continuar'),
           ),
         ],
       ),
