@@ -192,7 +192,7 @@ class _OracoesScreenState extends ConsumerState<OracoesScreen>
 
     return CustomCard(
       onTap: () => context.push(
-        '/oracoes/${oracao.id}',
+        '/oracoes/detalhe',
         extra: oracao,
       ),
       child: Padding(

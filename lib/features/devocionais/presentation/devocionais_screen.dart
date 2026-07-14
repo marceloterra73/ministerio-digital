@@ -176,7 +176,7 @@ class _DevocionaisScreenState extends ConsumerState<DevocionaisScreen> {
 
     return CustomCard(
       onTap: () => context.push(
-        '/devocionais/${devocional.id}',
+        '/devocionais/detalhe',
         extra: devocional,
       ),
       child: Padding(
