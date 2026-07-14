@@ -14,24 +14,11 @@ class AdminConteudosScreen extends ConsumerStatefulWidget {
   ConsumerState<AdminConteudosScreen> createState() => _AdminConteudosScreenState();
 }
 
-class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen>
-    with SingleTickerProviderStateMixin {
-  late TabController _tabController;
-  final _refreshKeys = <int, UniqueKey>{};
+class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen> {
+  int _abaSelecionada = 0;
+  final _refreshKey = UniqueKey();
 
-  @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: 4, vsync: this);
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
-
-
+  static const _abas = ['Orações', 'Devocionais', 'Vídeos', 'Podcasts'];
 
   @override
   Widget build(BuildContext context) {
@@ -42,41 +29,77 @@ class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen>
           icon: Icon(PhosphorIcons.arrowLeft()),
           onPressed: () => context.pop(),
         ),
-        bottom: TabBar(
-          controller: _tabController,
-          tabs: const [
-            Tab(text: 'Orações'),
-            Tab(text: 'Devocionais'),
-            Tab(text: 'Vídeos'),
-            Tab(text: 'Podcasts'),
-          ],
-        ),
       ),
-      body: TabBarView(
-        controller: _tabController,
+      body: Column(
         children: [
-          _OracoesTab(refreshKey: _refreshKeys[0]),
-          _DevocionaisTab(refreshKey: _refreshKeys[1]),
-          _VideosTab(refreshKey: _refreshKeys[2]),
-          _PodcastsTab(refreshKey: _refreshKeys[3]),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+            child: Row(
+              children: List.generate(_abas.length, (i) {
+                final selecionada = i == _abaSelecionada;
+                return Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(right: i < _abas.length - 1 ? 6 : 0),
+                    child: GestureDetector(
+                      onTap: () => setState(() => _abaSelecionada = i),
+                      child: AnimatedContainer(
+                        duration: Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        decoration: BoxDecoration(
+                          color: selecionada ? AppColors.primary : AppColors.surface,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: selecionada ? AppColors.primary : AppColors.border,
+                          ),
+                        ),
+                        child: Text(
+                          _abas[i],
+                          textAlign: TextAlign.center,
+                          style: AppTypography.labelMedium.copyWith(
+                            color: selecionada ? AppColors.textOnPrimary : AppColors.textPrimary,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              }),
+            ),
+          ),
+          Expanded(
+            key: ValueKey(_refreshKey.toString() + _abaSelecionada.toString()),
+            child: _buildAbaConteudo(),
+          ),
         ],
       ),
-      floatingActionButton: Builder(
-        builder: (context) {
-          final index = _tabController.index;
-          return FloatingActionButton(
-            onPressed: () => _mostrarDialogAdicionar(context, index),
-            backgroundColor: AppColors.secondary,
-            foregroundColor: AppColors.primaryDark,
-            child: Icon(PhosphorIcons.plus()),
-          );
-        },
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => _mostrarDialogAdicionar(context),
+        backgroundColor: AppColors.secondary,
+        foregroundColor: AppColors.primaryDark,
+        child: Icon(PhosphorIcons.plus()),
       ),
     );
   }
 
-  void _mostrarDialogAdicionar(BuildContext context, int tabIndex) {
-    switch (tabIndex) {
+  Widget _buildAbaConteudo() {
+    switch (_abaSelecionada) {
+      case 0:
+        return _OracoesTab();
+      case 1:
+        return _DevocionaisTab();
+      case 2:
+        return _VideosTab();
+      case 3:
+        return _PodcastsTab();
+      default:
+        return const SizedBox.shrink();
+    }
+  }
+
+  void _mostrarDialogAdicionar(BuildContext context) {
+    switch (_abaSelecionada) {
       case 0:
         _mostrarDialogAdicionarOracao(context);
       case 1:
@@ -433,9 +456,7 @@ class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen>
 }
 
 class _OracoesTab extends ConsumerWidget {
-  final Key? refreshKey;
-
-  const _OracoesTab({this.refreshKey});
+  const _OracoesTab();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -443,7 +464,6 @@ class _OracoesTab extends ConsumerWidget {
     final adminRepo = ref.read(adminRepositoryProvider);
 
     return FutureBuilder<List<Oracao>>(
-      key: refreshKey,
       future: oracaoRepo.getAllOracoes(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
@@ -510,9 +530,7 @@ class _OracoesTab extends ConsumerWidget {
 }
 
 class _DevocionaisTab extends ConsumerWidget {
-  final Key? refreshKey;
-
-  const _DevocionaisTab({this.refreshKey});
+  const _DevocionaisTab();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -520,7 +538,6 @@ class _DevocionaisTab extends ConsumerWidget {
     final adminRepo = ref.read(adminRepositoryProvider);
 
     return FutureBuilder<List<Devocional>>(
-      key: refreshKey,
       future: devocionalRepo.getAllDevocionais(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
@@ -593,9 +610,7 @@ class _DevocionaisTab extends ConsumerWidget {
 }
 
 class _VideosTab extends ConsumerWidget {
-  final Key? refreshKey;
-
-  const _VideosTab({this.refreshKey});
+  const _VideosTab();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -603,7 +618,6 @@ class _VideosTab extends ConsumerWidget {
     final adminRepo = ref.read(adminRepositoryProvider);
 
     return FutureBuilder<List<Video>>(
-      key: refreshKey,
       future: videoRepo.getAllVideos(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
@@ -670,9 +684,7 @@ class _VideosTab extends ConsumerWidget {
 }
 
 class _PodcastsTab extends ConsumerWidget {
-  final Key? refreshKey;
-
-  const _PodcastsTab({this.refreshKey});
+  const _PodcastsTab();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -680,7 +692,6 @@ class _PodcastsTab extends ConsumerWidget {
     final adminRepo = ref.read(adminRepositoryProvider);
 
     return FutureBuilder<List<Podcast>>(
-      key: refreshKey,
       future: podcastRepo.getAllPodcasts(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
