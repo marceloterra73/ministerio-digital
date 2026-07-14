@@ -1,9 +1,12 @@
-﻿import 'package:flutter/material.dart';
+﻿import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../offline/daos/bible_dao_interface.dart';
 import '../../../offline/daos/bible_dao.dart';
+import '../../../offline/daos/web_bible_dao.dart';
 import '../../../shared/widgets/app_back_button.dart';
 
 class BibleScreen extends StatefulWidget {
@@ -14,7 +17,7 @@ class BibleScreen extends StatefulWidget {
 }
 
 class _BibleScreenState extends State<BibleScreen> {
-  final BibleDao _dao = BibleDao();
+  final BibleDaoInterface _dao = kIsWeb ? WebBibleDao() : BibleDao();
   String _selectedTestament = 'AT';
   List<Map<String, dynamic>> _books = [];
   bool _isLoading = true;

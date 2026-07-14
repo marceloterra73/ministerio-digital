@@ -1,7 +1,8 @@
 import 'package:sqflite/sqflite.dart';
 import '../app_database.dart';
+import 'bible_dao_interface.dart';
 
-class BibleDao {
+class BibleDao implements BibleDaoInterface {
   Future<Database> get _db async => BibleDatabase.database;
 
   // =============================================
