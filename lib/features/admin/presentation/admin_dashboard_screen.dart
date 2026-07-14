@@ -170,12 +170,11 @@ class AdminDashboardScreen extends ConsumerWidget {
                 ),
               ],
             ),
-          ],
-        );
-      },
+          );
+        },
+      ),
     );
   }
-}
 }
 
 class _StatCard extends StatelessWidget {

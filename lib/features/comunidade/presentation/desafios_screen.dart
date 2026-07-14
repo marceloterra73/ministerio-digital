@@ -60,7 +60,7 @@ class DesafiosScreen extends ConsumerWidget {
               // Primeiro desafio como "em destaque"
               Text('Em Destaque', style: AppTypography.subtitle1),
               const SizedBox(height: 8),
-              _buildDesafioDestaque(desafios.first),
+              _buildDesafioDestaque(context, desafios.first),
               const SizedBox(height: 24),
 
               // Todos os desafios
@@ -69,7 +69,7 @@ class DesafiosScreen extends ConsumerWidget {
               ...desafios.map((desafio) {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 12),
-                  child: _buildDesafioCard(desafio),
+                  child: _buildDesafioCard(context, desafio),
                 );
               }),
             ],
@@ -79,7 +79,7 @@ class DesafiosScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildDesafioDestaque(Desafio desafio) {
+  Widget _buildDesafioDestaque(BuildContext context, Desafio desafio) {
     return CustomCard(
       onTap: () => _mostrarDialogParticipar(context, desafio),
       child: Padding(
@@ -170,7 +170,7 @@ class DesafiosScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildDesafioCard(Desafio desafio) {
+  Widget _buildDesafioCard(BuildContext context, Desafio desafio) {
     return CustomCard(
       onTap: () => _mostrarDialogParticipar(context, desafio),
       child: Padding(
