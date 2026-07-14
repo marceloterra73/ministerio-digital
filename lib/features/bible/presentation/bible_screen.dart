@@ -4,6 +4,7 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../offline/daos/bible_dao.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class BibleScreen extends StatefulWidget {
   const BibleScreen({super.key});
@@ -39,9 +40,12 @@ class _BibleScreenState extends State<BibleScreen> {
       appBar: AppBar(
         title: const Text('Bíblia Sagrada'),
         actions: [
-          IconButton(
-            onPressed: () => _showSearchDialog(context),
-            icon: Icon(PhosphorIcons.magnifyingGlass()),
+          GestureDetector(
+            onTap: () => _showSearchDialog(context),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(PhosphorIcons.magnifyingGlass()),
+            ),
           ),
         ],
       ),
@@ -98,24 +102,41 @@ class _BibleScreenState extends State<BibleScreen> {
                         itemCount: _books.length,
                         itemBuilder: (context, index) {
                           final book = _books[index];
-                          return ListTile(
-                            contentPadding: EdgeInsets.zero,
-                            title: Text(
-                              book['name'] as String,
-                              style: AppTypography.bodyLarge,
+                          return GestureDetector(
+                            onTap: () => _showChapters(context, book),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(vertical: 14),
+                              decoration: BoxDecoration(
+                                border: Border(
+                                  bottom: BorderSide(color: AppColors.border.withOpacity(0.5)),
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          book['name'] as String,
+                                          style: AppTypography.bodyLarge,
+                                        ),
+                                        const SizedBox(height: 4),
+                                        Text(
+                                          '${book['chapters_count']} capítulos',
+                                          style: AppTypography.bodySmall,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Icon(
+                                    PhosphorIcons.caretRight(),
+                                    color: AppColors.textTertiary,
+                                    size: 16,
+                                  ),
+                                ],
+                              ),
                             ),
-                            subtitle: Text(
-                              '${book['chapters_count']} capítulos',
-                              style: AppTypography.bodySmall,
-                            ),
-                            trailing: Icon(
-                              PhosphorIcons.caretRight(),
-                              color: AppColors.textTertiary,
-                              size: 16,
-                            ),
-                            onTap: () {
-                              _showChapters(context, book);
-                            },
                           );
                         },
                       ),

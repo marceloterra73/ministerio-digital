@@ -95,22 +95,35 @@ class _ChapterScreenState extends State<ChapterScreen> {
         ),
         actions: [
           if (_selectedVerses.isNotEmpty)
-            IconButton(
-              onPressed: _shareSelectedVerses,
-              icon: Icon(PhosphorIcons.shareFat()),
-              tooltip: 'Compartilhar selecionados',
+            GestureDetector(
+              onTap: _shareSelectedVerses,
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: Icon(PhosphorIcons.shareFat()),
+              ),
             ),
-          IconButton(
-            onPressed: () {
-              // TODO: Navegar para capítulo anterior
+          GestureDetector(
+            onTap: () {
+              if (widget.chapterNumber > 1) {
+                context.go('/bible/chapter/${widget.bookId}/${widget.chapterNumber - 1}?name=${widget.bookName}');
+              }
             },
-            icon: Icon(PhosphorIcons.caretLeft()),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(
+                PhosphorIcons.caretLeft(),
+                color: widget.chapterNumber > 1 ? null : AppColors.textTertiary,
+              ),
+            ),
           ),
-          IconButton(
-            onPressed: () {
-              // TODO: Navegar para próximo capítulo
+          GestureDetector(
+            onTap: () {
+              context.go('/bible/chapter/${widget.bookId}/${widget.chapterNumber + 1}?name=${widget.bookName}');
             },
-            icon: Icon(PhosphorIcons.caretRight()),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(PhosphorIcons.caretRight()),
+            ),
           ),
         ],
       ),
@@ -137,11 +150,7 @@ class _ChapterScreenState extends State<ChapterScreen> {
 
                     return GestureDetector(
                       onLongPress: () => _toggleVerse(verseNumber),
-                      onTap: () {
-                        if (_selectedVerses.isNotEmpty) {
-                          _toggleVerse(verseNumber);
-                        }
-                      },
+                      onTap: () => _toggleVerse(verseNumber),
                       child: Container(
                         margin: const EdgeInsets.only(bottom: 12),
                         padding: const EdgeInsets.all(12),
