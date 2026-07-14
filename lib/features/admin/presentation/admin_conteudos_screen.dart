@@ -18,7 +18,7 @@ class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen> {
   int _abaSelecionada = 0;
   final _refreshKey = UniqueKey();
 
-  static const _abas = ['Orações', 'Devocionais', 'Vídeos', 'Podcasts'];
+  static const _abas = ['Orações', 'Devocionais', 'Vídeos', 'Podcasts', 'Desafios'];
 
   @override
   Widget build(BuildContext context) {
@@ -93,6 +93,8 @@ class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen> {
         return _VideosTab();
       case 3:
         return _PodcastsTab();
+      case 4:
+        return _DesafiosTab();
       default:
         return const SizedBox.shrink();
     }
@@ -108,6 +110,8 @@ class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen> {
         _mostrarDialogAdicionarVideo(context);
       case 3:
         _mostrarDialogAdicionarPodcast(context);
+      case 4:
+        _mostrarDialogAdicionarDesafio(context);
     }
   }
 
@@ -453,6 +457,97 @@ class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen> {
       ),
     );
   }
+
+  void _mostrarDialogAdicionarDesafio(BuildContext context) {
+    final tituloCtrl = TextEditingController();
+    final descricaoCtrl = TextEditingController();
+    final diasCtrl = TextEditingController(text: '7');
+    final versiculosCtrl = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Adicionar Desafio'),
+        content: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextField(
+                controller: tituloCtrl,
+                decoration: const InputDecoration(
+                  labelText: 'Título',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: descricaoCtrl,
+                maxLines: 3,
+                decoration: const InputDecoration(
+                  labelText: 'Descrição',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: diasCtrl,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  labelText: 'Duração (dias)',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: versiculosCtrl,
+                maxLines: 3,
+                decoration: const InputDecoration(
+                  labelText: 'Versículos (um por linha)',
+                  hintText: 'Livro, capítulo, versículo, texto',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancelar'),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              if (tituloCtrl.text.isEmpty) return;
+              final repo = ref.read(adminRepositoryProvider);
+              final versiculos = versiculosCtrl.text.isNotEmpty
+                  ? versiculosCtrl.text.split('\n').where((l) => l.trim().isNotEmpty).map((linha) {
+                      final partes = linha.split(',').map((p) => p.trim()).toList();
+                      if (partes.length >= 4) {
+                        return {
+                          'livro': partes[0],
+                          'capitulo': int.tryParse(partes[1]) ?? 1,
+                          'versiculo': int.tryParse(partes[2]) ?? 1,
+                          'texto': partes.sublist(3).join(', '),
+                        };
+                      }
+                      return null;
+                    }).whereType<Map<String, dynamic>>().toList()
+                  : [];
+              await repo.adicionarConteudo('desafio', {
+                'titulo': tituloCtrl.text,
+                'descricao': descricaoCtrl.text,
+                'duracao_dias': int.tryParse(diasCtrl.text) ?? 7,
+                'versiculos': versiculos,
+              });
+              if (ctx.mounted) Navigator.pop(ctx);
+              setState(() {});
+            },
+            child: const Text('Salvar'),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 class _OracoesTab extends ConsumerWidget {
@@ -746,6 +841,80 @@ class _PodcastsTab extends ConsumerWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                         content: Text('Podcast removido'),
+                        behavior: SnackBarBehavior.floating,
+                      ),
+                    );
+                  }
+                },
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+}
+
+class _DesafiosTab extends ConsumerWidget {
+  const _DesafiosTab();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final desafioRepo = ref.read(desafioRepositoryProvider);
+    final adminRepo = ref.read(adminRepositoryProvider);
+
+    return FutureBuilder<List<Desafio>>(
+      future: desafioRepo.getAllDesafios(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(
+            child: CircularProgressIndicator(color: AppColors.primary),
+          );
+        }
+
+        final desafios = snapshot.data ?? [];
+
+        if (desafios.isEmpty) {
+          return _buildEmptyState(PhosphorIcons.fire(), 'Nenhum desafio');
+        }
+
+        return ListView.separated(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          itemCount: desafios.length,
+          separatorBuilder: (_, __) => const Divider(height: 1),
+          itemBuilder: (context, index) {
+            final desafio = desafios[index];
+            return ListTile(
+              leading: Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: AppColors.success.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Icon(
+                  PhosphorIcons.fire(),
+                  color: AppColors.success,
+                  size: 20,
+                ),
+              ),
+              title: Text(desafio.titulo, style: AppTypography.bodyLarge),
+              subtitle: Text(
+                '${desafio.duracaoDias} dias',
+                style: AppTypography.bodySmall,
+              ),
+              trailing: IconButton(
+                icon: Icon(
+                  PhosphorIcons.trash(),
+                  color: AppColors.error,
+                  size: 20,
+                ),
+                onPressed: () async {
+                  await adminRepo.removerConteudo('desafio', desafio.id);
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Desafio removido'),
                         behavior: SnackBarBehavior.floating,
                       ),
                     );

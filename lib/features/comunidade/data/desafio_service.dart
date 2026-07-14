@@ -82,4 +82,20 @@ class DesafioService {
     if (found.isEmpty) return null;
     return Desafio.fromJson(found);
   }
+
+  Future<void> adicionarDesafio(Map<String, dynamic> dados) async {
+    _mockDesafios.add({
+      'id': DateTime.now().millisecondsSinceEpoch.toString(),
+      'titulo': dados['titulo'],
+      'descricao': dados['descricao'] ?? '',
+      'duracao_dias': dados['duracao_dias'] ?? 7,
+      'versiculos': dados['versiculos'] ?? [],
+      'ativo': true,
+      'created_at': DateTime.now().toIso8601String(),
+    });
+  }
+
+  Future<void> removerDesafio(String id) async {
+    _mockDesafios.removeWhere((d) => d['id'] == id);
+  }
 }

@@ -3,6 +3,7 @@ import '../../oracoes/data/oracao_service.dart';
 import '../../devocionais/data/devocional_service.dart';
 import '../../videos/data/video_service.dart';
 import '../../podcasts/data/podcast_service.dart';
+import '../../comunidade/data/desafio_service.dart';
 
 class AdminRepository {
   final AdminService _service;
@@ -40,6 +41,8 @@ class AdminRepository {
         await VideoService().adicionarVideo(dados);
       case 'podcast':
         await PodcastService().adicionarPodcast(dados);
+      case 'desafio':
+        await DesafioService().adicionarDesafio(dados);
     }
   }
 }

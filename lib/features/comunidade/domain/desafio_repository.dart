@@ -10,4 +10,9 @@ class DesafioRepository {
   Future<List<Desafio>> getAllDesafios() => _service.getAllDesafios();
 
   Future<Desafio?> getDesafioById(String id) => _service.getDesafioById(id);
+
+  Future<void> adicionarDesafio(Map<String, dynamic> dados) =>
+      _service.adicionarDesafio(dados);
+
+  Future<void> removerDesafio(String id) => _service.removerDesafio(id);
 }

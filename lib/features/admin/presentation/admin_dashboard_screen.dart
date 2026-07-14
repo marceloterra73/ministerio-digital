@@ -161,13 +161,21 @@ class AdminDashboardScreen extends ConsumerWidget {
                   subtitle: 'Orações, devocionais, vídeos e podcasts',
                   onTap: () => context.push('/admin/conteudos'),
                 ),
+                const SizedBox(height: 8),
+                _ActionCard(
+                  icon: PhosphorIcons.fire(),
+                  title: 'Gerenciar Desafios',
+                  subtitle: 'Criar e gerenciar desafios espirituais',
+                  onTap: () => context.push('/admin/conteudos'),
+                ),
               ],
             ),
-          );
-        },
-      ),
+          ],
+        );
+      },
     );
   }
+}
 }
 
 class _StatCard extends StatelessWidget {

@@ -81,7 +81,7 @@ class DesafiosScreen extends ConsumerWidget {
 
   Widget _buildDesafioDestaque(Desafio desafio) {
     return CustomCard(
-      onTap: () {},
+      onTap: () => _mostrarDialogParticipar(context, desafio),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -160,7 +160,7 @@ class DesafiosScreen extends ConsumerWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => _mostrarDialogParticipar(context, desafio),
                 child: const Text('Participar'),
               ),
             ),
@@ -172,7 +172,7 @@ class DesafiosScreen extends ConsumerWidget {
 
   Widget _buildDesafioCard(Desafio desafio) {
     return CustomCard(
-      onTap: () {},
+      onTap: () => _mostrarDialogParticipar(context, desafio),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Row(
@@ -211,6 +211,46 @@ class DesafiosScreen extends ConsumerWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  void _mostrarDialogParticipar(BuildContext context, Desafio desafio) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(desafio.titulo),
+        content: const Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('Você está prestes a participar deste desafio!'),
+            SizedBox(height: 12),
+            Text(
+              'Você receberá notificações diárias e lembretes para completar cada etapa.',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancelar'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    'Você está participando do "${desafio.titulo}"!',
+                  ),
+                  behavior: SnackBarBehavior.floating,
+                ),
+              );
+            },
+            child: const Text('Participar'),
+          ),
+        ],
       ),
     );
   }
