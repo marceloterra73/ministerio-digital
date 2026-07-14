@@ -53,7 +53,7 @@ class AppRoutes {
   static const String testemunhos = '/comunidade/testemunhos';
   static const String desafios = '/comunidade/desafios';
   static const String desafioDetalhe = '/comunidade/desafios/:id';
-  static const String iaPastoral = '/ia-pastoral';
+  static const String atendimentoPastoral = '/atendimento-pastoral';
   static const String perfil = '/perfil';
   static const String favoritos = '/favoritos';
   static const String configuracoes = '/configuracoes';

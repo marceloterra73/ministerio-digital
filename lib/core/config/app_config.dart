@@ -5,7 +5,7 @@ class AppConfig {
   static const String supabaseUrl = 'SUA_URL_SUPABASE';
   static const String supabaseAnonKey = 'SUA_ANON_KEY_SUPABASE';
 
-  // OpenAI - para IA Pastoral (opcional)
+  // OpenAI - para Atendimento Pastoral (opcional)
   static const String openaiApiKey = 'SUA_OPENAI_API_KEY';
 
   // YouTube Channel ID

@@ -1,4 +1,5 @@
-﻿import 'package:flutter/material.dart';
+﻿import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'app/app.dart';
 import 'core/config/supabase_config.dart';
@@ -14,11 +15,13 @@ void main() async {
     debugPrint('Supabase não configurado. Usando dados mock: $e');
   }
 
-  // Carregar Bíblia offline na primeira execução
-  try {
-    await BibleSeeder().loadBibleFromAssets();
-  } catch (e) {
-    debugPrint('Erro ao carregar Bíblia: $e');
+  // Carregar Bíblia offline na primeira execução (apenas mobile/desktop)
+  if (!kIsWeb) {
+    try {
+      await BibleSeeder().loadBibleFromAssets();
+    } catch (e) {
+      debugPrint('Erro ao carregar Bíblia: $e');
+    }
   }
 
   runApp(

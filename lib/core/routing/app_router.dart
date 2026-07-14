@@ -149,7 +149,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const RadioScreen(),
       ),
       GoRoute(
-        path: AppRoutes.iaPastoral,
+        path: AppRoutes.atendimentoPastoral,
         builder: (context, state) => const IaPastoralScreen(),
       ),
       GoRoute(

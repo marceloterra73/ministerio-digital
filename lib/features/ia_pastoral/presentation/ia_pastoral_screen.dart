@@ -111,7 +111,7 @@ class _IaPastoralScreenState extends ConsumerState<IaPastoralScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'IA Pastoral',
+                  'Atendimento Pastoral',
                   style: AppTypography.subtitle2.copyWith(fontSize: 16),
                 ),
                 Text(
@@ -138,7 +138,7 @@ class _IaPastoralScreenState extends ConsumerState<IaPastoralScreen> {
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    'Esta IA não substitui aconselhamento pastoral ou profissional.',
+                    'Este chat não substitui aconselhamento pastoral ou profissional.',
                     style: AppTypography.labelSmall.copyWith(
                       color: AppColors.textSecondary,
                     ),

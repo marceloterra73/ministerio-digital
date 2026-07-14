@@ -120,8 +120,8 @@ class PerfilScreen extends ConsumerWidget {
                 _buildMenuItem(
                   context,
                   icon: PhosphorIcons.chatCircle(),
-                  title: 'IA Pastoral',
-                  onTap: () => context.push('/ia-pastoral'),
+                  title: 'Atendimento Pastoral',
+                  onTap: () => context.push('/atendimento-pastoral'),
                 ),
                 _buildMenuItem(
                   context,
