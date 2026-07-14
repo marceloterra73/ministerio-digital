@@ -6,6 +6,7 @@ import '../../../core/di/providers.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../data/admin_service.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class AdminUsuariosScreen extends ConsumerStatefulWidget {
   const AdminUsuariosScreen({super.key});
@@ -36,9 +37,8 @@ class _AdminUsuariosScreenState extends ConsumerState<AdminUsuariosScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gerenciar Usuários'),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
       ),
       body: FutureBuilder<List<AdminUsuario>>(

@@ -6,6 +6,7 @@ import '../../../core/di/providers.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../data/ia_pastoral_service.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class IaPastoralScreen extends ConsumerStatefulWidget {
   const IaPastoralScreen({super.key});
@@ -87,9 +88,8 @@ class _IaPastoralScreenState extends ConsumerState<IaPastoralScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
         title: Row(
           children: [

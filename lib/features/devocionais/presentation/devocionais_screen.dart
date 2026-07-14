@@ -47,9 +47,12 @@ class _DevocionaisScreenState extends ConsumerState<DevocionaisScreen> {
                 },
               )
             : const Text('Devocionais'),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: GestureDetector(
+          onTap: () => context.pop(),
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: Icon(PhosphorIcons.arrowLeft()),
+          ),
         ),
         actions: [
           IconButton(

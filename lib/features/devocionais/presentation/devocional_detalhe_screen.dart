@@ -24,9 +24,12 @@ class DevocionalDetalheScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(temaInfo['label'] as String),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: GestureDetector(
+          onTap: () => context.pop(),
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: Icon(PhosphorIcons.arrowLeft()),
+          ),
         ),
         actions: [
           IconButton(

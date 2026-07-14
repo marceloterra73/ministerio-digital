@@ -5,6 +5,7 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../offline/daos/bible_dao.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class ChapterScreen extends StatefulWidget {
   final int bookId;
@@ -76,9 +77,8 @@ class _ChapterScreenState extends State<ChapterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

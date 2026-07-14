@@ -7,6 +7,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/models/content_models.dart';
 import '../../../shared/widgets/custom_card.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class DesafiosScreen extends ConsumerStatefulWidget {
   const DesafiosScreen({super.key});
@@ -25,9 +26,8 @@ class _DesafiosScreenState extends ConsumerState<DesafiosScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Desafios Espirituais'),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.go('/comunidade'),
+        leading: AppBackButton(
+          onTap: () => context.go('/comunidade'),
         ),
       ),
       body: FutureBuilder<List<Desafio>>(
@@ -184,13 +184,27 @@ class _DesafiosScreenState extends ConsumerState<DesafiosScreen> {
               ),
             ],
             const SizedBox(height: 16),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: participando
-                    ? null
-                    : () => _mostrarDialogParticipar(desafio),
-                child: Text(participando ? 'Participando ✓' : 'Participar'),
+            GestureDetector(
+              onTap: participando
+                  ? null
+                  : () => _mostrarDialogParticipar(desafio),
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                decoration: BoxDecoration(
+                  color: participando
+                      ? AppColors.success.withOpacity(0.15)
+                      : AppColors.secondary,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(
+                  participando ? 'Participando ✓' : 'Participar',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.labelLarge.copyWith(
+                    color: participando ? AppColors.success : AppColors.primaryDark,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
               ),
             ),
           ],

@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class DoacoesScreen extends StatefulWidget {
   const DoacoesScreen({super.key});
@@ -26,9 +27,8 @@ class _DoacoesScreenState extends State<DoacoesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
         title: Text(
           'Contribuir',

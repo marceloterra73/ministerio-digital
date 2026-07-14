@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class ConfiguracoesScreen extends StatefulWidget {
   const ConfiguracoesScreen({super.key});
@@ -21,9 +22,8 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Configurações'),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
       ),
       body: ListView(

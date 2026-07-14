@@ -6,6 +6,7 @@ import '../../../core/di/providers.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/models/content_models.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class AdminConteudosScreen extends ConsumerStatefulWidget {
   const AdminConteudosScreen({super.key});
@@ -25,9 +26,8 @@ class _AdminConteudosScreenState extends ConsumerState<AdminConteudosScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gerenciar Conteúdos'),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
       ),
       body: Column(

@@ -7,6 +7,7 @@ import '../../../core/constants/app_constants.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/models/content_models.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class OracaoDetalheScreen extends StatelessWidget {
   final Oracao oracao;
@@ -20,9 +21,8 @@ class OracaoDetalheScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(temaInfo['label'] as String),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
         actions: [
           IconButton(

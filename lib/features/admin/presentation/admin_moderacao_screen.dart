@@ -6,6 +6,7 @@ import '../../../core/di/providers.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/models/content_models.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class AdminModeracaoScreen extends ConsumerStatefulWidget {
   const AdminModeracaoScreen({super.key});
@@ -36,9 +37,8 @@ class _AdminModeracaoScreenState extends ConsumerState<AdminModeracaoScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Moderar Testemunhos'),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
       ),
       body: FutureBuilder<List<Testemunho>>(

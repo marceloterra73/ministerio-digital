@@ -7,6 +7,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/custom_card.dart';
 import '../domain/favorito_repository.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class FavoritosScreen extends ConsumerWidget {
   const FavoritosScreen({super.key});
@@ -20,9 +21,8 @@ class FavoritosScreen extends ConsumerWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Meus Favoritos'),
-          leading: IconButton(
-            icon: Icon(PhosphorIcons.arrowLeft()),
-            onPressed: () => context.pop(),
+          leading: AppBackButton(
+            onTap: () => context.pop(),
           ),
           bottom: const TabBar(
             labelColor: AppColors.primary,

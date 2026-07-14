@@ -7,6 +7,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/models/content_models.dart';
 import '../../../shared/widgets/custom_card.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class PedidosOracaoScreen extends ConsumerStatefulWidget {
   const PedidosOracaoScreen({super.key});
@@ -24,9 +25,8 @@ class _PedidosOracaoScreenState extends ConsumerState<PedidosOracaoScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pedidos de Oração'),
-        leading: IconButton(
-          icon: Icon(PhosphorIcons.arrowLeft()),
-          onPressed: () => context.go('/comunidade'),
+        leading: AppBackButton(
+          onTap: () => context.go('/comunidade'),
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
