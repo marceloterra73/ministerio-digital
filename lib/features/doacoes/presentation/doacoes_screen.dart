@@ -159,28 +159,26 @@ class _DoacoesScreenState extends State<DoacoesScreen> {
             const SizedBox(height: 24),
 
             // Botão Contribuir
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.secondary,
-                  foregroundColor: AppColors.primaryDark,
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text(
-                        'Obrigado pela sua contribuicao! Deus o abencoe!',
-                      ),
-                      behavior: SnackBarBehavior.floating,
-                      backgroundColor: AppColors.success,
+            GestureDetector(
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text(
+                      'Obrigado pela sua contribuicao! Deus o abencoe!',
                     ),
-                  );
-                },
+                    behavior: SnackBarBehavior.floating,
+                    backgroundColor: AppColors.success,
+                  ),
+                );
+              },
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                decoration: BoxDecoration(
+                  color: AppColors.secondary,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                alignment: Alignment.center,
                 child: Text(
                   'Contribuir Agora',
                   style: AppTypography.labelLarge.copyWith(

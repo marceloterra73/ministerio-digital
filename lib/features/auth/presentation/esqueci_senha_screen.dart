@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class EsqueciSenhaScreen extends StatefulWidget {
   const EsqueciSenhaScreen({super.key});
@@ -45,9 +46,8 @@ class _EsqueciSenhaScreenState extends State<EsqueciSenhaScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Recuperar Senha'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
       ),
       body: SingleChildScrollView(
@@ -97,18 +97,32 @@ class _EsqueciSenhaScreenState extends State<EsqueciSenhaScreen> {
             const SizedBox(height: 24),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                onPressed: _isLoading ? null : _enviarLink,
-                child: _isLoading
-                    ? const SizedBox(
-                        height: 20,
-                        width: 20,
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          color: AppColors.textOnPrimary,
-                        ),
-                      )
-                    : const Text('Enviar Link'),
+              child: GestureDetector(
+                onTap: _isLoading ? null : _enviarLink,
+                child: Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  decoration: BoxDecoration(
+                    color: _isLoading ? AppColors.primary.withOpacity(0.5) : AppColors.primary,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  alignment: Alignment.center,
+                  child: _isLoading
+                      ? const SizedBox(
+                          height: 20,
+                          width: 20,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: AppColors.textOnPrimary,
+                          ),
+                        )
+                      : const Text('Enviar Link',
+                          style: TextStyle(
+                            color: AppColors.textOnPrimary,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          )),
+                ),
               ),
             ),
           ],

@@ -598,13 +598,8 @@ class _OracoesTab extends ConsumerWidget {
                 oracao.tema,
                 style: AppTypography.bodySmall,
               ),
-              trailing: IconButton(
-                icon: Icon(
-                  PhosphorIcons.trash(),
-                  color: AppColors.error,
-                  size: 20,
-                ),
-                onPressed: () async {
+              trailing: GestureDetector(
+                onTap: () async {
                   await adminRepo.removerConteudo('oracao', oracao.id);
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -615,6 +610,14 @@ class _OracoesTab extends ConsumerWidget {
                     );
                   }
                 },
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Icon(
+                    PhosphorIcons.trash(),
+                    color: AppColors.error,
+                    size: 20,
+                  ),
+                ),
               ),
             );
           },
@@ -675,13 +678,8 @@ class _DevocionaisTab extends ConsumerWidget {
                 devocional.tema,
                 style: AppTypography.bodySmall,
               ),
-              trailing: IconButton(
-                icon: Icon(
-                  PhosphorIcons.trash(),
-                  color: AppColors.error,
-                  size: 20,
-                ),
-                onPressed: () async {
+              trailing: GestureDetector(
+                onTap: () async {
                   await adminRepo.removerConteudo(
                     'devocional',
                     devocional.id,
@@ -695,6 +693,14 @@ class _DevocionaisTab extends ConsumerWidget {
                     );
                   }
                 },
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Icon(
+                    PhosphorIcons.trash(),
+                    color: AppColors.error,
+                    size: 20,
+                  ),
+                ),
               ),
             );
           },
@@ -752,13 +758,8 @@ class _VideosTab extends ConsumerWidget {
                 video.categoria ?? 'Sem categoria',
                 style: AppTypography.bodySmall,
               ),
-              trailing: IconButton(
-                icon: Icon(
-                  PhosphorIcons.trash(),
-                  color: AppColors.error,
-                  size: 20,
-                ),
-                onPressed: () async {
+              trailing: GestureDetector(
+                onTap: () async {
                   await adminRepo.removerConteudo('video', video.id);
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -769,6 +770,14 @@ class _VideosTab extends ConsumerWidget {
                     );
                   }
                 },
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Icon(
+                    PhosphorIcons.trash(),
+                    color: AppColors.error,
+                    size: 20,
+                  ),
+                ),
               ),
             );
           },
@@ -829,13 +838,8 @@ class _PodcastsTab extends ConsumerWidget {
                 podcast.categoria ?? 'Sem categoria',
                 style: AppTypography.bodySmall,
               ),
-              trailing: IconButton(
-                icon: Icon(
-                  PhosphorIcons.trash(),
-                  color: AppColors.error,
-                  size: 20,
-                ),
-                onPressed: () async {
+              trailing: GestureDetector(
+                onTap: () async {
                   await adminRepo.removerConteudo('podcast', podcast.id);
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -846,6 +850,14 @@ class _PodcastsTab extends ConsumerWidget {
                     );
                   }
                 },
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Icon(
+                    PhosphorIcons.trash(),
+                    color: AppColors.error,
+                    size: 20,
+                  ),
+                ),
               ),
             );
           },
@@ -903,13 +915,8 @@ class _DesafiosTab extends ConsumerWidget {
                 '${desafio.duracaoDias} dias',
                 style: AppTypography.bodySmall,
               ),
-              trailing: IconButton(
-                icon: Icon(
-                  PhosphorIcons.trash(),
-                  color: AppColors.error,
-                  size: 20,
-                ),
-                onPressed: () async {
+              trailing: GestureDetector(
+                onTap: () async {
                   await adminRepo.removerConteudo('desafio', desafio.id);
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -920,6 +927,14 @@ class _DesafiosTab extends ConsumerWidget {
                     );
                   }
                 },
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Icon(
+                    PhosphorIcons.trash(),
+                    color: AppColors.error,
+                    size: 20,
+                  ),
+                ),
               ),
             );
           },

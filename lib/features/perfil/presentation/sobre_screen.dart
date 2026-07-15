@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../shared/widgets/app_back_button.dart';
 
 class SobreScreen extends StatelessWidget {
   const SobreScreen({super.key});
@@ -12,9 +13,8 @@ class SobreScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Sobre'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.pop(),
+        leading: AppBackButton(
+          onTap: () => context.pop(),
         ),
       ),
       body: SingleChildScrollView(

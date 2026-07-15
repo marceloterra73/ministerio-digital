@@ -32,17 +32,23 @@ class DevocionalDetalheScreen extends StatelessWidget {
           ),
         ),
         actions: [
-          IconButton(
-            onPressed: () {
+          GestureDetector(
+            onTap: () {
               _shareDevocional(context);
             },
-            icon: Icon(PhosphorIcons.shareFat()),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(PhosphorIcons.shareFat()),
+            ),
           ),
-          IconButton(
-            onPressed: () {
+          GestureDetector(
+            onTap: () {
               _copyToClipboard(context);
             },
-            icon: Icon(PhosphorIcons.copy()),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(PhosphorIcons.copy()),
+            ),
           ),
         ],
       ),

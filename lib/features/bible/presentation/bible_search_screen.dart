@@ -102,15 +102,18 @@ class _BibleSearchScreenState extends State<BibleSearchScreen> {
                 hintText: 'Digite uma palavra...',
                 prefixIcon: Icon(PhosphorIcons.magnifyingGlass()),
                 suffixIcon: _searchController.text.isNotEmpty
-                    ? IconButton(
-                        icon: Icon(PhosphorIcons.x()),
-                        onPressed: () {
+                    ? GestureDetector(
+                        onTap: () {
                           _searchController.clear();
                           setState(() {
                             _results = [];
                             _hasSearched = false;
                           });
                         },
+                        child: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Icon(PhosphorIcons.x()),
+                        ),
                       )
                     : null,
               ),
@@ -209,10 +212,12 @@ class _BibleSearchScreenState extends State<BibleSearchScreen> {
                                       style: AppTypography.verse.copyWith(fontSize: 14),
                                     ),
                                   ),
-                                  trailing: IconButton(
-                                    icon: Icon(PhosphorIcons.copy(), size: 18),
-                                    onPressed: () => _copyToClipboard(verse),
-                                    tooltip: 'Copiar',
+                                  trailing: GestureDetector(
+                                    onTap: () => _copyToClipboard(verse),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Icon(PhosphorIcons.copy(), size: 18),
+                                    ),
                                   ),
                                 ),
                               );

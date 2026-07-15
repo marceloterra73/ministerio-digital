@@ -133,47 +133,49 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     ),
                   ),
                   const Spacer(),
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        if (isLastPage) {
-                          ref.read(onboardingSeenProvider.notifier).state = true;
-                          context.go('/login');
-                        } else {
-                          _pageController.nextPage(
-                            duration: const Duration(milliseconds: 300),
-                            curve: Curves.easeInOut,
-                          );
-                        }
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: isLastPage
-                            ? AppColors.secondary
-                            : AppColors.primary,
-                        foregroundColor: isLastPage
-                            ? AppColors.primaryDark
-                            : AppColors.textOnPrimary,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
+                  GestureDetector(
+                    onTap: () {
+                      if (isLastPage) {
+                        ref.read(onboardingSeenProvider.notifier).state = true;
+                        context.go('/login');
+                      } else {
+                        _pageController.nextPage(
+                          duration: const Duration(milliseconds: 300),
+                          curve: Curves.easeInOut,
+                        );
+                      }
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      decoration: BoxDecoration(
+                        color: isLastPage ? AppColors.secondary : AppColors.primary,
+                        borderRadius: BorderRadius.circular(12),
                       ),
+                      alignment: Alignment.center,
                       child: Text(
                         isLastPage ? 'Começar' : 'Próximo',
+                        style: TextStyle(
+                          color: isLastPage ? AppColors.primaryDark : AppColors.textOnPrimary,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     ),
                   ),
                   const SizedBox(height: 12),
                   if (!isLastPage)
-                    TextButton(
-                      onPressed: () {
+                    GestureDetector(
+                      onTap: () {
                         ref.read(onboardingSeenProvider.notifier).state = true;
                         context.go('/login');
                       },
-                      child: const Text(
-                        'Pular',
-                        style: TextStyle(color: AppColors.textTertiary),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: const Text(
+                          'Pular',
+                          style: TextStyle(color: AppColors.textTertiary, fontSize: 16),
+                        ),
                       ),
                     ),
                 ],

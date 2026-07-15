@@ -20,9 +20,12 @@ class PerfilScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('Meu Perfil'),
         actions: [
-          IconButton(
-            onPressed: () => context.push('/configuracoes'),
-            icon: Icon(PhosphorIcons.gearSix()),
+          GestureDetector(
+            onTap: () => context.push('/configuracoes'),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(PhosphorIcons.gearSix()),
+            ),
           ),
         ],
       ),

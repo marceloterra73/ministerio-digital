@@ -25,17 +25,23 @@ class OracaoDetalheScreen extends StatelessWidget {
           onTap: () => context.pop(),
         ),
         actions: [
-          IconButton(
-            onPressed: () {
+          GestureDetector(
+            onTap: () {
               _sharePrayer(context);
             },
-            icon: Icon(PhosphorIcons.shareFat()),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(PhosphorIcons.shareFat()),
+            ),
           ),
-          IconButton(
-            onPressed: () {
+          GestureDetector(
+            onTap: () {
               _copyToClipboard(context);
             },
-            icon: Icon(PhosphorIcons.copy()),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(PhosphorIcons.copy()),
+            ),
           ),
         ],
       ),

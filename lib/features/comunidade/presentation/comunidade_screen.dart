@@ -185,16 +185,28 @@ class ComunidadeScreen extends ConsumerWidget {
           const SizedBox(height: 24),
 
           // Botão Criar Pedido
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton.icon(
-              onPressed: () => context.go('/comunidade/pedidos'),
-              icon: Icon(PhosphorIcons.plus(), size: 20),
-              label: const Text('Fazer Pedido de Oração'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.secondary,
-                foregroundColor: AppColors.primaryDark,
-                padding: const EdgeInsets.symmetric(vertical: 14),
+          GestureDetector(
+            onTap: () => context.go('/comunidade/pedidos'),
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(vertical: 14),
+              decoration: BoxDecoration(
+                color: AppColors.secondary,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              alignment: Alignment.center,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(PhosphorIcons.plus(), size: 20, color: AppColors.primaryDark),
+                  const SizedBox(width: 8),
+                  const Text('Fazer Pedido de Oração',
+                      style: TextStyle(
+                        color: AppColors.primaryDark,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      )),
+                ],
               ),
             ),
           ),
@@ -216,12 +228,15 @@ class ComunidadeScreen extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(title, style: AppTypography.subtitle1),
-            TextButton(
-              onPressed: onViewAll,
-              child: Text(
-                'Ver todos',
-                style: AppTypography.bodySmall.copyWith(
-                  color: AppColors.primary,
+            GestureDetector(
+              onTap: onViewAll,
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: Text(
+                  'Ver todos',
+                  style: AppTypography.bodySmall.copyWith(
+                    color: AppColors.primary,
+                  ),
                 ),
               ),
             ),

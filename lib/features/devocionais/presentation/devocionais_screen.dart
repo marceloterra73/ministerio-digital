@@ -55,8 +55,8 @@ class _DevocionaisScreenState extends ConsumerState<DevocionaisScreen> {
           ),
         ),
         actions: [
-          IconButton(
-            onPressed: () {
+          GestureDetector(
+            onTap: () {
               setState(() {
                 _isSearching = !_isSearching;
                 if (!_isSearching) {
@@ -65,8 +65,11 @@ class _DevocionaisScreenState extends ConsumerState<DevocionaisScreen> {
                 }
               });
             },
-            icon: Icon(
-              _isSearching ? PhosphorIcons.x() : PhosphorIcons.magnifyingGlass(),
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Icon(
+                _isSearching ? PhosphorIcons.x() : PhosphorIcons.magnifyingGlass(),
+              ),
             ),
           ),
         ],

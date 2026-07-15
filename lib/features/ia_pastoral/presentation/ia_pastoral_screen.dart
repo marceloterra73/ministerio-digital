@@ -233,12 +233,15 @@ class _IaPastoralScreenState extends ConsumerState<IaPastoralScreen> {
                       color: AppColors.primary,
                       shape: BoxShape.circle,
                     ),
-                    child: IconButton(
-                      onPressed: _isLoading ? null : () => _sendMessage(),
-                      icon: Icon(
-                        PhosphorIcons.paperPlaneRight(),
-                        color: AppColors.textOnPrimary,
-                        size: 20,
+                    child: GestureDetector(
+                      onTap: _isLoading ? null : () => _sendMessage(),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Icon(
+                          PhosphorIcons.paperPlaneRight(),
+                          color: _isLoading ? AppColors.textTertiary : AppColors.textOnPrimary,
+                          size: 20,
+                        ),
                       ),
                     ),
                   ),

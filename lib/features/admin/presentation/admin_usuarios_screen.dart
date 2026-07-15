@@ -68,10 +68,28 @@ class _AdminUsuariosScreenState extends ConsumerState<AdminUsuariosScreen> {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  ElevatedButton.icon(
-                    onPressed: _loadUsuarios,
-                    icon: Icon(PhosphorIcons.arrowClockwise()),
-                    label: const Text('Tentar novamente'),
+                  GestureDetector(
+                    onTap: _loadUsuarios,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                      decoration: BoxDecoration(
+                        color: AppColors.primary,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(PhosphorIcons.arrowClockwise(), size: 18, color: AppColors.textOnPrimary),
+                          const SizedBox(width: 8),
+                          const Text('Tentar novamente',
+                              style: TextStyle(
+                                color: AppColors.textOnPrimary,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                              )),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),

@@ -115,17 +115,20 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   decoration: InputDecoration(
                     labelText: 'Senha',
                     prefixIcon: const Icon(Icons.lock_outline),
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        _obscurePassword
-                            ? Icons.visibility_off
-                            : Icons.visibility,
-                      ),
-                      onPressed: () {
+                    suffixIcon: GestureDetector(
+                      onTap: () {
                         setState(() {
                           _obscurePassword = !_obscurePassword;
                         });
                       },
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Icon(
+                          _obscurePassword
+                              ? Icons.visibility_off
+                              : Icons.visibility,
+                        ),
+                      ),
                     ),
                   ),
                   validator: (value) {
@@ -143,14 +146,17 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 // Esqueci a senha
                 Align(
                   alignment: Alignment.centerRight,
-                  child: TextButton(
-                    onPressed: () {
+                  child: GestureDetector(
+                    onTap: () {
                       context.push('/esqueci-senha');
                     },
-                    child: Text(
-                      'Esqueceu a senha?',
-                      style: AppTypography.bodySmall.copyWith(
-                        color: AppColors.primary,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Text(
+                        'Esqueceu a senha?',
+                        style: AppTypography.bodySmall.copyWith(
+                          color: AppColors.primary,
+                        ),
                       ),
                     ),
                   ),
@@ -158,18 +164,32 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 const SizedBox(height: 24),
 
                 // Botão Login
-                ElevatedButton(
-                  onPressed: _isLoading ? null : _login,
-                  child: _isLoading
-                      ? const SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: AppColors.textOnPrimary,
-                          ),
-                        )
-                      : const Text('Entrar'),
+                GestureDetector(
+                  onTap: _isLoading ? null : _login,
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    decoration: BoxDecoration(
+                      color: _isLoading ? AppColors.primary.withOpacity(0.5) : AppColors.primary,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    alignment: Alignment.center,
+                    child: _isLoading
+                        ? const SizedBox(
+                            height: 20,
+                            width: 20,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              color: AppColors.textOnPrimary,
+                            ),
+                          )
+                        : const Text('Entrar',
+                            style: TextStyle(
+                              color: AppColors.textOnPrimary,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            )),
+                  ),
                 ),
                 const SizedBox(height: 16),
 

@@ -237,9 +237,9 @@ class _VideosScreenState extends ConsumerState<VideosScreen>
                       ),
                     ],
                   ),
-                  child: IconButton(
-                    onPressed: () => _openRadioStream(context),
-                    icon: Icon(
+                  child: GestureDetector(
+                    onTap: () => _openRadioStream(context),
+                    child: Icon(
                       PhosphorIcons.play(),
                       color: AppColors.textOnPrimary,
                       size: 56,

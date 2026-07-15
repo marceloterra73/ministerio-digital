@@ -1,6 +1,7 @@
 ﻿import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
+import '../../../core/theme/app_colors.dart';
 
 class MainScaffold extends StatelessWidget {
   final Widget child;
@@ -39,39 +40,74 @@ class MainScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final selectedIndex = _calculateSelectedIndex(context);
     return Scaffold(
       body: child,
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _calculateSelectedIndex(context),
-        onTap: (index) => _onItemTapped(index, context),
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(PhosphorIcons.house()),
-            activeIcon: Icon(PhosphorIcons.house(PhosphorIconsStyle.fill)),
-            label: 'Início',
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          color: AppColors.surface,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 8,
+              offset: const Offset(0, -2),
+            ),
+          ],
+        ),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: List.generate(_navItems.length, (index) {
+                final item = _navItems[index];
+                final isSelected = index == selectedIndex;
+                return GestureDetector(
+                  onTap: () => _onItemTapped(index, context),
+                  behavior: HitTestBehavior.opaque,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(
+                          isSelected ? item.activeIcon : item.icon,
+                          color: isSelected ? AppColors.primary : AppColors.textTertiary,
+                          size: 24,
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          item.label,
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+                            color: isSelected ? AppColors.primary : AppColors.textTertiary,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }),
+            ),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(PhosphorIcons.bookOpen()),
-            activeIcon: Icon(PhosphorIcons.bookOpen(PhosphorIconsStyle.fill)),
-            label: 'Bíblia',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(PhosphorIcons.users()),
-            activeIcon: Icon(PhosphorIcons.users(PhosphorIconsStyle.fill)),
-            label: 'Comunidade',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(PhosphorIcons.playCircle()),
-            activeIcon: Icon(PhosphorIcons.playCircle(PhosphorIconsStyle.fill)),
-            label: 'Mídias',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(PhosphorIcons.userCircle()),
-            activeIcon: Icon(PhosphorIcons.userCircle(PhosphorIconsStyle.fill)),
-            label: 'Perfil',
-          ),
-        ],
+        ),
       ),
     );
   }
 }
+
+class _NavItem {
+  final IconData icon;
+  final IconData activeIcon;
+  final String label;
+  const _NavItem({required this.icon, required this.activeIcon, required this.label});
+}
+
+final _navItems = [
+  _NavItem(icon: PhosphorIcons.house(), activeIcon: PhosphorIcons.house(PhosphorIconsStyle.fill), label: 'Início'),
+  _NavItem(icon: PhosphorIcons.bookOpen(), activeIcon: PhosphorIcons.bookOpen(PhosphorIconsStyle.fill), label: 'Bíblia'),
+  _NavItem(icon: PhosphorIcons.users(), activeIcon: PhosphorIcons.users(PhosphorIconsStyle.fill), label: 'Comunidade'),
+  _NavItem(icon: PhosphorIcons.playCircle(), activeIcon: PhosphorIcons.playCircle(PhosphorIconsStyle.fill), label: 'Mídias'),
+  _NavItem(icon: PhosphorIcons.userCircle(), activeIcon: PhosphorIcons.userCircle(PhosphorIconsStyle.fill), label: 'Perfil'),
+];

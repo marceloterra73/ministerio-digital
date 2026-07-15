@@ -79,23 +79,29 @@ class HomeScreen extends StatelessWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            IconButton(
-              onPressed: () => context.push('/notificacoes'),
-              icon: Icon(
-                PhosphorIcons.bell(),
-                color: AppColors.primary,
-                size: 26,
+            GestureDetector(
+              onTap: () => context.push('/notificacoes'),
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: Icon(
+                  PhosphorIcons.bell(),
+                  color: AppColors.primary,
+                  size: 26,
+                ),
               ),
             ),
-            IconButton(
-              onPressed: () => context.push('/perfil'),
-              icon: CircleAvatar(
-                radius: 22,
-                backgroundColor: AppColors.primary,
-                child: Icon(
-                  PhosphorIcons.user(),
-                  color: AppColors.textOnPrimary,
-                  size: 22,
+            GestureDetector(
+              onTap: () => context.push('/perfil'),
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: CircleAvatar(
+                  radius: 22,
+                  backgroundColor: AppColors.primary,
+                  child: Icon(
+                    PhosphorIcons.user(),
+                    color: AppColors.textOnPrimary,
+                    size: 22,
+                  ),
                 ),
               ),
             ),
@@ -196,18 +202,30 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _buildBotaoOrar(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      child: ElevatedButton.icon(
-        onPressed: () {
-          // TODO: Abrir tela de oração personalizada
-        },
-        icon: Icon(PhosphorIcons.handsPraying(), size: 20),
-        label: const Text('Começar minha oração'),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.secondary,
-          foregroundColor: AppColors.primaryDark,
-          padding: const EdgeInsets.symmetric(vertical: 16),
+    return GestureDetector(
+      onTap: () {
+        // TODO: Abrir tela de oração personalizada
+      },
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        decoration: BoxDecoration(
+          color: AppColors.secondary,
+          borderRadius: BorderRadius.circular(12),
+        ),
+        alignment: Alignment.center,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(PhosphorIcons.handsPraying(), size: 20, color: AppColors.primaryDark),
+            const SizedBox(width: 8),
+            const Text('Começar minha oração',
+                style: TextStyle(
+                  color: AppColors.primaryDark,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                )),
+          ],
         ),
       ),
     );
@@ -219,12 +237,15 @@ class HomeScreen extends StatelessWidget {
       children: [
         Text(title, style: AppTypography.subtitle1),
         if (onViewAll != null)
-          TextButton(
-            onPressed: onViewAll,
-            child: Text(
-              'Ver todos',
-              style: AppTypography.bodySmall.copyWith(
-                color: AppColors.primary,
+          GestureDetector(
+            onTap: onViewAll,
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Text(
+                'Ver todos',
+                style: AppTypography.bodySmall.copyWith(
+                  color: AppColors.primary,
+                ),
               ),
             ),
           ),

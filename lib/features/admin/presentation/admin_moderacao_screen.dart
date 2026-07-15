@@ -68,10 +68,28 @@ class _AdminModeracaoScreenState extends ConsumerState<AdminModeracaoScreen> {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  ElevatedButton.icon(
-                    onPressed: _loadTestemunhos,
-                    icon: Icon(PhosphorIcons.arrowClockwise()),
-                    label: const Text('Tentar novamente'),
+                  GestureDetector(
+                    onTap: _loadTestemunhos,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                      decoration: BoxDecoration(
+                        color: AppColors.primary,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(PhosphorIcons.arrowClockwise(), size: 18, color: AppColors.textOnPrimary),
+                          const SizedBox(width: 8),
+                          const Text('Tentar novamente',
+                              style: TextStyle(
+                                color: AppColors.textOnPrimary,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                              )),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -260,21 +278,28 @@ class _ActionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 34,
-      child: ElevatedButton.icon(
-        onPressed: onPressed,
-        icon: Icon(icon, size: 16),
-        label: Text(label),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: color.withOpacity(0.1),
-          foregroundColor: color,
-          elevation: 0,
+      child: GestureDetector(
+        onTap: onPressed,
+        child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 12),
-          shape: RoundedRectangleBorder(
+          decoration: BoxDecoration(
+            color: color.withOpacity(0.1),
             borderRadius: BorderRadius.circular(8),
           ),
-          textStyle: AppTypography.labelMedium.copyWith(
-            color: color,
-            fontWeight: FontWeight.w600,
+          alignment: Alignment.center,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, size: 16, color: color),
+              const SizedBox(width: 4),
+              Text(
+                label,
+                style: AppTypography.labelMedium.copyWith(
+                  color: color,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
           ),
         ),
       ),
