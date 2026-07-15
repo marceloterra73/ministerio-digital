@@ -9,6 +9,7 @@ import '../../../offline/daos/bible_dao_interface.dart';
 import '../../../offline/daos/bible_dao.dart';
 import '../../../offline/daos/web_bible_dao.dart';
 import '../../../shared/widgets/app_back_button.dart';
+import 'verse_detail_sheet.dart';
 
 class ChapterScreen extends StatefulWidget {
   final int bookId;
@@ -153,8 +154,23 @@ class _ChapterScreenState extends State<ChapterScreen> {
                     final isSelected = _selectedVerses.contains(verseNumber);
 
                     return GestureDetector(
+                      onTap: () {
+                        showModalBottomSheet(
+                          context: context,
+                          isScrollControlled: true,
+                          backgroundColor: AppColors.surface,
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                          ),
+                          builder: (_) => VerseDetailSheet(
+                            bookName: widget.bookName,
+                            chapter: widget.chapterNumber,
+                            verse: verseNumber,
+                            verseText: text,
+                          ),
+                        );
+                      },
                       onLongPress: () => _toggleVerse(verseNumber),
-                      onTap: () => _toggleVerse(verseNumber),
                       child: Container(
                         margin: const EdgeInsets.only(bottom: 12),
                         padding: const EdgeInsets.all(12),
