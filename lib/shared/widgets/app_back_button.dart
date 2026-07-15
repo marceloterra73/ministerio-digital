@@ -10,8 +10,9 @@ class AppBackButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(8),
+      behavior: HitTestBehavior.opaque,
+      child: Container(
+        padding: const EdgeInsets.all(12),
         child: Icon(PhosphorIcons.arrowLeft()),
       ),
     );

@@ -80,6 +80,7 @@ class _ChapterScreenState extends State<ChapterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         leading: AppBackButton(
           onTap: () => context.pop(),
         ),
